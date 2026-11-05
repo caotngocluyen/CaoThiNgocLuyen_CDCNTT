@@ -1,0 +1,146 @@
+[
+  {
+    "id": "Q1",
+    "query": "Hợp đồng lao động có những loại nào?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 20",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Có 2 loại: Không xác định thời hạn và xác định thời hạn không quá 36 tháng"
+  },
+  {
+    "id": "Q2",
+    "query": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 25",
+    "target_clauses": ["Khoản 2"],
+    "key_answer": "Không quá 60 ngày đối với chức danh cần trình độ từ cao đẳng trở lên"
+  },
+  {
+    "id": "Q3",
+    "query": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 113",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "12 ngày làm việc đối với người làm việc đủ 12 tháng trong điều kiện bình thường"
+  },
+  {
+    "id": "Q4",
+    "query": "Thời giờ làm việc bình thường không quá bao nhiêu giờ trong một ngày và một tuần?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 105",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần"
+  },
+  {
+    "id": "Q5",
+    "query": "Làm thêm giờ vào ngày nghỉ hàng tuần được trả lương tính như thế nào?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 98",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Ít nhất bằng 200% đơn giá tiền lương hoặc tiền lương thực trả"
+  },
+  {
+    "id": "Q6",
+    "query": "Người sử dụng lao động có phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động không?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 99",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Có, được trả đủ tiền lương theo hợp đồng lao động nếu do lỗi của người sử dụng lao động"
+  },
+  {
+    "id": "Q7",
+    "query": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong những trường hợp nào?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 35",
+    "target_clauses": ["Khoản 2"],
+    "key_answer": "Không được bố trí đúng công việc, không được trả đủ lương, bị ngược đãi, đủ tuổi nghỉ hưu..."
+  },
+  {
+    "id": "Q8",
+    "query": "Trường hợp nào người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 37",
+    "target_clauses": ["Khoản 1", "Khoản 2"],
+    "key_answer": "Người lao động ốm đau/tai nạn đang điều trị, đang nghỉ hằng năm, lao động nữ mang thai/nghỉ thai sản/nuôi con dưới 12 tháng"
+  },
+  {
+    "id": "Q9",
+    "query": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động gồm những gì?",
+    "domain": "labor_law",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 48",
+    "target_clauses": ["Khoản 1", "Khoản 3"],
+    "key_answer": "Thanh toán đầy đủ quyền lợi trong 14 ngày làm việc, hoàn thành xác nhận và trả lại sổ BHXH"
+  },
+  {
+    "id": "Q10",
+    "query": "Những đối tượng người lao động nào thuộc diện tham gia bảo hiểm xã hội bắt buộc?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 2",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Người làm việc theo HĐLĐ không xác định thời hạn, xác định thời hạn từ đủ 01 tháng trở lên..."
+  },
+  {
+    "id": "Q11",
+    "query": "Điều kiện hưởng chế độ thai sản khi sinh con đối với lao động nữ là gì?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 50",
+    "target_clauses": ["Khoản 1", "Khoản 2"],
+    "key_answer": "Đóng BHXH từ đủ 06 tháng trở lên trong thời gian 12 tháng trước khi sinh con"
+  },
+  {
+    "id": "Q12",
+    "query": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là bao nhiêu tháng?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 53",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "06 tháng (trước và sau khi sinh con)"
+  },
+  {
+    "id": "Q13",
+    "query": "Điều kiện hưởng chế độ ốm đau đối với người lao động tham gia bảo hiểm xã hội bắt buộc là gì?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 42",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Bị ốm đau, tai nạn phải nghỉ việc và có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền"
+  },
+  {
+    "id": "Q14",
+    "query": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 45",
+    "target_clauses": ["Khoản 2"],
+    "key_answer": "Bằng 75% mức tiền lương làm căn cứ đóng bảo hiểm xã hội theo quy định tại khoản 1 Điều 43 và Điều 44"
+  },
+  {
+    "id": "Q15",
+    "query": "Điều kiện hưởng lương hưu và tuổi nghỉ hưu của người lao động được quy định như thế nào?",
+    "domain": "social_insurance",
+    "target_document": "41/2024/QH15",
+    "target_article": "Điều 64",
+    "target_clauses": ["Khoản 1"],
+    "key_answer": "Đủ tuổi nghỉ hưu theo quy định tại khoản 2 Điều 169 Bộ luật Lao động và có thời gian đóng BHXH từ đủ 15 năm trở lên"
+  },
+  {
+    "id": "Q16",
+    "query": "Nghỉ đẻ thì công ty có phải trả lương hay bảo hiểm xã hội chi trả?",
+    "domain": "mixed",
+    "target_document": "18/VBHN-VPQH",
+    "target_article": "Điều 168",
+    "target_clauses": ["Khoản 2"],
+    "key_answer": "Trong thời gian nghỉ hưởng chế độ BHXH thì người sử dụng lao động không phải trả lương cho người lao động, BHXH sẽ chi trả"
+  }
+]

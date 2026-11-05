@@ -1,0 +1,231 @@
+{
+  "total_queries": 16,
+  "article_accuracy_pct": 68.75,
+  "clause_accuracy_pct": 68.75,
+  "total_time_sec": 1.2582721710205078,
+  "details": [
+    {
+      "id": "Q1",
+      "query": "Hợp đồng lao động có những loại nào?",
+      "target_article": "Điều 20.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": false,
+      "has_exact_clause": false,
+      "matched_info": [],
+      "latency_sec": 0.2686941623687744
+    },
+    {
+      "id": "Q2",
+      "query": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+      "target_article": "Điều 25.",
+      "target_clauses": [
+        "Khoản 2"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 2 (18_VBHN_VPQH_art_25_cl_2_83, hybrid_rrf)"
+      ],
+      "latency_sec": 0.05782365798950195
+    },
+    {
+      "id": "Q3",
+      "query": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường?",
+      "target_article": "Điều 113.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_113_cl_1_357, parent_child_expansion)"
+      ],
+      "latency_sec": 0.06749963760375977
+    },
+    {
+      "id": "Q4",
+      "query": "Thời giờ làm việc bình thường không quá bao nhiêu giờ trong một ngày và một tuần?",
+      "target_article": "Điều 105.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_105_cl_1_336, hybrid_rrf)"
+      ],
+      "latency_sec": 0.060810089111328125
+    },
+    {
+      "id": "Q5",
+      "query": "Làm thêm giờ vào ngày nghỉ hàng tuần được trả lương tính như thế nào?",
+      "target_article": "Điều 98.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_98_cl_1_317, parent_child_expansion)"
+      ],
+      "latency_sec": 0.0559535026550293
+    },
+    {
+      "id": "Q6",
+      "query": "Người sử dụng lao động có phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động không?",
+      "target_article": "Điều 99.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_99_cl_1_322, hybrid_rrf)",
+        "Khoản 1 (18_VBHN_VPQH_art_99_cl_1_321, parent_child_expansion)"
+      ],
+      "latency_sec": 0.08654642105102539
+    },
+    {
+      "id": "Q7",
+      "query": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong những trường hợp nào?",
+      "target_article": "Điều 35.",
+      "target_clauses": [
+        "Khoản 2"
+      ],
+      "has_article": false,
+      "has_exact_clause": false,
+      "matched_info": [],
+      "latency_sec": 0.06123971939086914
+    },
+    {
+      "id": "Q8",
+      "query": "Trường hợp nào người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động?",
+      "target_article": "Điều 37.",
+      "target_clauses": [
+        "Khoản 1",
+        "Khoản 2"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_37_cl_1_121, hybrid_rrf)",
+        "Khoản 1 (18_VBHN_VPQH_art_37_cl_1_122, parent_child_expansion)",
+        "Khoản 2 (18_VBHN_VPQH_art_37_cl_2_123, parent_child_expansion)"
+      ],
+      "latency_sec": 0.06735730171203613
+    },
+    {
+      "id": "Q9",
+      "query": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động gồm những gì?",
+      "target_article": "Điều 48.",
+      "target_clauses": [
+        "Khoản 1",
+        "Khoản 3"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (18_VBHN_VPQH_art_48_cl_1_157, parent_child_expansion)",
+        "Khoản 3 (18_VBHN_VPQH_art_48_cl_3_159, parent_child_expansion)"
+      ],
+      "latency_sec": 0.06652545928955078
+    },
+    {
+      "id": "Q10",
+      "query": "Những đối tượng người lao động nào thuộc diện tham gia bảo hiểm xã hội bắt buộc?",
+      "target_article": "Điều 2.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (41_2024_QH15_art_2_cl_1_3_sub1, parent_child_expansion)",
+        "Khoản 1 (41_2024_QH15_art_2_cl_1_3_sub2, parent_child_expansion)"
+      ],
+      "latency_sec": 0.0608060359954834
+    },
+    {
+      "id": "Q11",
+      "query": "Điều kiện hưởng chế độ thai sản khi sinh con đối với lao động nữ là gì?",
+      "target_article": "Điều 50.",
+      "target_clauses": [
+        "Khoản 1",
+        "Khoản 2"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (41_2024_QH15_art_50_cl_1_237, hybrid_rrf)",
+        "Khoản 2 (41_2024_QH15_art_50_cl_2_238, parent_child_expansion)"
+      ],
+      "latency_sec": 0.05454277992248535
+    },
+    {
+      "id": "Q12",
+      "query": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là bao nhiêu tháng?",
+      "target_article": "Điều 53.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 1 (41_2024_QH15_art_53_cl_1_248, parent_child_expansion)"
+      ],
+      "latency_sec": 0.05179142951965332
+    },
+    {
+      "id": "Q13",
+      "query": "Điều kiện hưởng chế độ ốm đau đối với người lao động tham gia bảo hiểm xã hội bắt buộc là gì?",
+      "target_article": "Điều 42.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": false,
+      "has_exact_clause": false,
+      "matched_info": [],
+      "latency_sec": 0.07671952247619629
+    },
+    {
+      "id": "Q14",
+      "query": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+      "target_article": "Điều 45.",
+      "target_clauses": [
+        "Khoản 2"
+      ],
+      "has_article": true,
+      "has_exact_clause": true,
+      "matched_info": [
+        "Khoản 2 (41_2024_QH15_art_45_cl_2_219, hybrid_rrf)"
+      ],
+      "latency_sec": 0.06855106353759766
+    },
+    {
+      "id": "Q15",
+      "query": "Điều kiện hưởng lương hưu và tuổi nghỉ hưu của người lao động được quy định như thế nào?",
+      "target_article": "Điều 64.",
+      "target_clauses": [
+        "Khoản 1"
+      ],
+      "has_article": false,
+      "has_exact_clause": false,
+      "matched_info": [],
+      "latency_sec": 0.06817340850830078
+    },
+    {
+      "id": "Q16",
+      "query": "Nghỉ đẻ thì công ty có phải trả lương hay bảo hiểm xã hội chi trả?",
+      "target_article": "Điều 168.",
+      "target_clauses": [
+        "Khoản 2"
+      ],
+      "has_article": false,
+      "has_exact_clause": false,
+      "matched_info": [],
+      "latency_sec": 0.06917786598205566
+    }
+  ]
+}

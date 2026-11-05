@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Large Model weights (> 100MB, cannot push to GitHub)
+models/llm/*.gguf
+models/embedding/*
+!models/embedding/.gitkeep
+!models/llm/.gitkeep
+
+# Vector Database (runtime generated)
+vector_db/chroma_db/*.sqlite3
+vector_db/chroma_db/*-*/
+
+# Logs & temp
+logs/*.log
+logs/*.jsonl
+*.tmp
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets & environment variables
+.env

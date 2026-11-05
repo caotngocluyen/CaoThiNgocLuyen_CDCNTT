@@ -1,0 +1,530 @@
+{
+  "A: BM25_V1 + Dense_V1": {
+    "primary_article": {
+      "Hit@1": 37.5,
+      "Hit@3": 62.5,
+      "Hit@5": 68.75,
+      "MRR@5": 0.5052
+    },
+    "primary_clause": {
+      "Hit@1": 18.75,
+      "Hit@3": 18.75,
+      "Hit@5": 31.25,
+      "MRR@5": 0.2188
+    },
+    "expanded_article_hits": "11/16 (68.8%)",
+    "expanded_clause_hits": "11/16 (68.8%)",
+    "expanded_all_clause_hits": "11/16 (68.8%)",
+    "avg_latency_ms": 31.2,
+    "per_question": {
+      "Q1": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q2": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q3": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q4": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q5": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q6": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 4,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q7": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q8": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q9": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q10": {
+        "primary_art_rank": 3,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q11": {
+        "primary_art_rank": 4,
+        "primary_cl_rank": 4,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q12": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q13": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q14": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q15": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q16": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      }
+    }
+  },
+  "B: BM25_V2 + Dense_V1": {
+    "primary_article": {
+      "Hit@1": 43.75,
+      "Hit@3": 68.75,
+      "Hit@5": 68.75,
+      "MRR@5": 0.5417
+    },
+    "primary_clause": {
+      "Hit@1": 18.75,
+      "Hit@3": 31.25,
+      "Hit@5": 31.25,
+      "MRR@5": 0.2292
+    },
+    "expanded_article_hits": "11/16 (68.8%)",
+    "expanded_clause_hits": "11/16 (68.8%)",
+    "expanded_all_clause_hits": "11/16 (68.8%)",
+    "avg_latency_ms": 41.83,
+    "per_question": {
+      "Q1": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q2": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q3": {
+        "primary_art_rank": 3,
+        "primary_cl_rank": 3,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q4": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q5": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q6": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q7": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q8": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q9": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q10": {
+        "primary_art_rank": 3,
+        "primary_cl_rank": 3,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q11": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q12": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q13": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q14": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q15": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q16": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      }
+    }
+  },
+  "C: BM25_V1 + Dense_V2": {
+    "primary_article": {
+      "Hit@1": 56.25,
+      "Hit@3": 68.75,
+      "Hit@5": 75.0,
+      "MRR@5": 0.6302
+    },
+    "primary_clause": {
+      "Hit@1": 37.5,
+      "Hit@3": 50.0,
+      "Hit@5": 56.25,
+      "MRR@5": 0.4427
+    },
+    "expanded_article_hits": "12/16 (75.0%)",
+    "expanded_clause_hits": "12/16 (75.0%)",
+    "expanded_all_clause_hits": "12/16 (75.0%)",
+    "avg_latency_ms": 41.34,
+    "per_question": {
+      "Q1": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q2": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q3": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q4": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q5": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q6": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 2,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q7": {
+        "primary_art_rank": 4,
+        "primary_cl_rank": 4,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q8": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q9": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q10": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q11": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q12": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q13": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q14": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 3,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q15": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q16": {
+        "primary_art_rank": 3,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      }
+    }
+  },
+  "D: BM25_V2 + Dense_V2": {
+    "primary_article": {
+      "Hit@1": 56.25,
+      "Hit@3": 68.75,
+      "Hit@5": 75.0,
+      "MRR@5": 0.6406
+    },
+    "primary_clause": {
+      "Hit@1": 31.25,
+      "Hit@3": 50.0,
+      "Hit@5": 62.5,
+      "MRR@5": 0.4375
+    },
+    "expanded_article_hits": "12/16 (75.0%)",
+    "expanded_clause_hits": "12/16 (75.0%)",
+    "expanded_all_clause_hits": "12/16 (75.0%)",
+    "avg_latency_ms": 47.76,
+    "per_question": {
+      "Q1": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q2": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q3": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 2,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q4": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q5": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q6": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 2,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q7": {
+        "primary_art_rank": 4,
+        "primary_cl_rank": 4,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q8": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q9": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 1,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q10": {
+        "primary_art_rank": 2,
+        "primary_cl_rank": 4,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q11": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q12": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q13": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q14": {
+        "primary_art_rank": 1,
+        "primary_cl_rank": 2,
+        "expanded_art_hit": true,
+        "expanded_cl_hit": true,
+        "expanded_all_cl_hit": true
+      },
+      "Q15": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      },
+      "Q16": {
+        "primary_art_rank": 999,
+        "primary_cl_rank": 999,
+        "expanded_art_hit": false,
+        "expanded_cl_hit": false,
+        "expanded_all_cl_hit": false
+      }
+    }
+  }
+}

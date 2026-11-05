@@ -1,0 +1,2194 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-04 20:27:27",
+    "total_test_cases": 42,
+    "passed_count": 34,
+    "failed_count": 8,
+    "pass_rate_percent": 80.95,
+    "group_statistics": {
+      "Nhóm A - Hoàn toàn ngoài phạm vi": {
+        "total": 6,
+        "pass": 5,
+        "fail": 1
+      },
+      "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi": {
+        "total": 6,
+        "pass": 1,
+        "fail": 5
+      },
+      "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB": {
+        "total": 6,
+        "pass": 6,
+        "fail": 0
+      },
+      "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện": {
+        "total": 6,
+        "pass": 4,
+        "fail": 2
+      },
+      "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi": {
+        "total": 6,
+        "pass": 6,
+        "fail": 0
+      },
+      "Nhóm F - Từ khóa gây nhầm lẫn": {
+        "total": 6,
+        "pass": 6,
+        "fail": 0
+      },
+      "Nhóm G - Văn bản, điều luật và thời điểm pháp luật": {
+        "total": 6,
+        "pass": 6,
+        "fail": 0
+      }
+    }
+  },
+  "test_results": [
+    {
+      "test_id": "OOS_A01",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Lương 30 triệu đồng có phải đóng thuế thu nhập cá nhân không?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Từ chối trả lời hoặc thông báo ngoài phạm vi tư vấn thuế TNCN; không lấy BLLĐ để giải thích thuế.",
+      "execution_time_sec": 45.61,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 16,
+        "unique_articles": [
+          "Điều 102. Khấu trừ tiền lương",
+          "Điều 25. Thời gian thử việc",
+          "Điều 104. Mức bình quân thu nhập làm căn cứ đóng bảo hiểm xã hội tự nguyện",
+          "Điều 135. Chính sách của Nhà nước"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Lương 30 triệu đồng không phải đóng thuế thu nhập cá nhân.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Lương 30 triệu đồng không phải đóng thuế thu nhập cá nhân.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nLương 30 triệu đồng không phải đóng thuế thu nhập cá nhân.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 3 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 1 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 2 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Không quá 30% tiền lương thực trả hằng tháng của người lao động sau khi trích nộp các khoản bảo hiểm xã hội bắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp, thuế thu nhập cá nhân.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong văn bản pháp luật được cung cấp.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "CRITICAL",
+        "reasons": [
+          "IntentAgent phân loại sai thành in-scope domain='labor_law' cho câu hỏi hoàn toàn ngoài phạm vi.",
+          "LegalAnalysisAgent tự đưa ra kết luận pháp lý dù câu hỏi ngoài phạm vi."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_A02",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Mua bán nhà đất phải đóng những loại thuế nào và thủ tục công chứng ra sao?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện ngoài phạm vi (đất đai, thuế BĐS), từ chối lịch sự.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_A03",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Hộ kinh doanh cá thể phải đóng những loại thuế gì hàng năm?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện ngoài phạm vi (thuế kinh doanh), từ chối lịch sự.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_A04",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Vượt đèn đỏ và đi ngược chiều bị cảnh sát giao thông phạt bao nhiêu tiền?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện ngoài phạm vi (luật giao thông), từ chối trong < 10ms.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "vượt đèn đỏ"
+        ],
+        "explanation": "Câu hỏi có chứa chủ đề ngoài phạm vi tư vấn lao động/BHXH: 'vượt đèn đỏ'"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Câu hỏi có chứa chủ đề ngoài phạm vi tư vấn lao động/BHXH: 'vượt đèn đỏ') thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_A05",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Tội trộm cắp tài sản trên 2 triệu đồng bị xử phạt tù bao nhiêu năm?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện ngoài phạm vi (luật hình sự), từ chối trong < 10ms.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_A06",
+      "group": "Nhóm A - Hoàn toàn ngoài phạm vi",
+      "question": "Thủ tục đơn phương ly hôn và phân chia tài sản chung cần những giấy tờ gì?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện ngoài phạm vi (hôn nhân gia đình), từ chối trong < 10ms.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "ly hôn"
+        ],
+        "explanation": "Câu hỏi có chứa chủ đề ngoài phạm vi tư vấn lao động/BHXH: 'ly hôn'"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Câu hỏi có chứa chủ đề ngoài phạm vi tư vấn lao động/BHXH: 'ly hôn') thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_B01",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Người lao động có được hưởng bảo hiểm thất nghiệp không và điều kiện là gì?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện BHTN thuộc Luật Việc làm (chưa có trong KB), cảnh báo thiếu căn cứ hoặc từ chối, không bịa đặt luật.",
+      "execution_time_sec": 29.27,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "người lao động"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: người lao động)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 8,
+        "unique_articles": [
+          "Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp",
+          "Điều 19. Giao kết nhiều hợp đồng lao động",
+          "Điều 115. Nghỉ việc riêng, nghỉ không hưởng lương"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Người lao động có được hưởng bảo hiểm thất nghiệp và điều kiện để hưởng.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Người lao động có được hưởng bảo hiểm thất nghiệp và điều kiện để hưởng.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNgười lao động có được hưởng bảo hiểm thất nghiệp và điều kiện để hưởng.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp, Khoản 2 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp, Khoản 1 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp, Khoản 3 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp thì người sử dụng lao động có trách nhiệm chi trả thêm cùng lúc với kỳ trả lương một khoản tiền cho người lao động tương đương với mức người sử dụng lao động đóng bảo hiểm xã hội bắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp cho người lao động theo quy định của pháp luật về bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_B02",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Mức hưởng trợ cấp thất nghiệp tối đa là bao nhiêu tháng lương?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện BHTN không có trong KB, không tự bịa con số tháng hưởng trợ cấp thất nghiệp.",
+      "execution_time_sec": 41.75,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 14,
+        "unique_articles": [
+          "Điều 89. Mức trợ cấp tuất một lần",
+          "Điều 87. Mức trợ cấp tuất hằng tháng",
+          "Điều 23. Ch ế độ đối với người lao đ ộng không đ ủ điều kiện hưởng lương"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Mức hưởng trợ cấp thất nghiệp tối đa là 3 tháng lương.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 8,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Mức hưởng trợ cấp thất nghiệp tối đa là 3 tháng lương.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nMức hưởng trợ cấp thất nghiệp tối đa là 3 tháng lương.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 89. Mức trợ cấp tuất một lần, Khoản 5 - Trang 62 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 89. Mức trợ cấp tuất một lần, Khoản 3 - Trang 62 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 87. Mức trợ cấp tuất hằng tháng, Khoản 2 - Trang 60 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 89. Mức trợ cấp tuất một lần, Khoản 1 - Trang 61 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 89. Mức trợ cấp tuất một lần, Khoản 2 - Trang 62 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 89. Mức trợ cấp tuất một lần, Khoản 4 - Trang 62 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 87. Mức trợ cấp tuất hằng tháng, Khoản 1 - Trang 60 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 87. Mức trợ cấp tuất hằng tháng, Khoản 3 - Trang 61 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Trường hợp người đang hưởng trợ cấp tai nạn lao động, bệnh nghề nghiệp hằng tháng chưa nghỉ việc hoặc còn bảo lưu thời gian đóng bảo hiểm xã hội, người đang hưởng trợ cấp tai nạn lao động, bệnh nghề nghiệp hằng tháng đồng thời là người đang hưởng lương hưu.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "CRITICAL",
+        "reasons": [
+          "Chatbot tự suy diễn số tháng hưởng trợ cấp thất nghiệp dù không có Luật Việc làm trong KB."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_B03",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Mức hưởng bảo hiểm y tế khi đi khám bệnh đúng tuyến là bao nhiêu phần trăm?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện BHYT không có trong KB, từ chối hoặc nêu rõ chưa có Luật BHYT.",
+      "execution_time_sec": 65.16,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "mức hưởng bảo hiểm"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: mức hưởng bảo hiểm)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 29,
+        "unique_articles": [
+          "Điều 61. Hồ sơ đề nghị hưởng chế độ thai sản",
+          "Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau",
+          "Điều 83. Hồ sơ, trình tự khám giám định mức suy giảm khả năng lao động",
+          "Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội",
+          "Điều 50. Đối tượng và điều kiện hưởng chế độ thai sản",
+          "Điều 102. Hưởng bảo hiểm xã hội một lần"
+        ],
+        "primary_chunks_count": 6
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Mức hưởng bảo hiểm y tế khi đi khám bệnh đúng tuyến là 100% phần trăm.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "FAILED",
+        "verified_citations_count": 5,
+        "hallucinated_citations": [],
+        "unsupported_facts": [
+          "100%"
+        ],
+        "warning_messages": [
+          "Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong Điều 120, nên không cần nêu rõ các trường hợp ngoại lệ.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Mức hưởng bảo hiểm y tế khi đi khám bệnh đúng tuyến là 100% phần trăm.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nMức hưởng bảo hiểm y tế khi đi khám bệnh đúng tuyến là 100% phần trăm.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội, Khoản 2 - Trang 76 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội, Khoản 1 - Trang 76 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội, Khoản 3 - Trang 77 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội, Khoản 4 - Trang 77 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 120. Chi tổ chức và hoạt động bảo hiểm xã hội, Khoản 5 - Trang 77 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Theo Điều 120, chi tổ chức và hoạt động bảo hiểm xã hội được tính trên cơ sở số phần trăm của dự toán thu, chi bảo hiểm xã hội, không bao gồm số chi đóng bảo hiểm y tế cho người hưởng các chế độ bảo hiểm xã hội và được trích từ tiền sinh lời của hoạt động đầu tư quỹ bảo hiểm xã hội.\n+ LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong Điều 120, nên không cần nêu rõ các trường hợp ngoại lệ.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong Điều 120, nên không cần nêu rõ các trường hợp ngoại lệ.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "CRITICAL",
+        "reasons": [
+          "Chatbot tự suy diễn tỷ lệ thanh toán BHYT dù không có Luật BHYT trong KB."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_B04",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Người lao động có được giảm trừ gia cảnh thuế thu nhập cá nhân cho người phụ thuộc không?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Dù có 'người lao động', đây là vấn đề thuế TNCN ngoài KB, không dùng BLLĐ giải thích thuế.",
+      "execution_time_sec": 26.04,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "người lao động"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: người lao động)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 8,
+        "unique_articles": [
+          "Điều 153. Trách nhiệm của người sử dụng lao động và người lao động",
+          "Điều 102. Khấu trừ tiền lương",
+          "Điều 100. Trả lương thông qua người cai thầu"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Người lao động nước ngoài không được giảm trừ gia cảnh thuế thu nhập cá nhân cho người phụ thuộc.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Người lao động nước ngoài không được giảm trừ gia cảnh thuế thu nhập cá nhân cho người phụ thuộc.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNgười lao động nước ngoài không được giảm trừ gia cảnh thuế thu nhập cá nhân cho người phụ thuộc.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 3 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 1 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 102. Khấu trừ tiền lương, Khoản 2 - Trang 42 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Không có quy định cụ thể về việc giảm trừ gia cảnh thuế thu nhập cá nhân cho người phụ thuộc của người lao động nước ngoài.\n+ Lưu ý/ ngoại lệ: Không có ngoại lệ cụ thể trong điều luật này.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "CRITICAL",
+        "reasons": [
+          "Chatbot tự suy diễn quy định thuế TNCN từ văn bản BLLĐ."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_B05",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Doanh nghiệp phải nộp những khoản thuế gì khi chi trả tiền lương cho nhân viên?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Dù có 'tiền lương', đây là thuế doanh nghiệp/TNCN ngoài KB, không gán vào chế độ lương BLLĐ.",
+      "execution_time_sec": 23.36,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 13,
+        "unique_articles": [
+          "Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp",
+          "Điều 101. Tạm ứng tiền lương",
+          "Điều 102. Khấu trừ tiền lương",
+          "Điều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Doanh nghiệp không phải nộp thuế khi chi trả tiền lương cho nhân viên.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Doanh nghiệp không phải nộp thuế khi chi trả tiền lương cho nhân viên.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nDoanh nghiệp không phải nộp thuế khi chi trả tiền lương cho nhân viên.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp, Khoản 2 - Trang 18 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp, Khoản 1 - Trang 18 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp, Khoản 3 - Trang 18 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Không được trợ cấp thôi việc, không phải trả trợ cấp mất việc làm nếu đã nhận.\n+ Lưu ý/ngoại lệ: Không có ngoại lệ trong điều luật này.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "HIGH",
+        "reasons": [
+          "Phân loại in-scope và đưa ra kết luận khẳng định nhưng thiếu cảnh báo về phạm vi BHTN/BHYT/Thuế."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_B06",
+      "group": "Nhóm B - Gần phạm vi nhưng thực tế ngoài phạm vi",
+      "question": "Nghỉ việc sau bao lâu thì được nộp hồ sơ nhận tiền trợ cấp thất nghiệp?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Thủ tục nhận BHTN thuộc Luật Việc làm, không khẳng định thời hạn nếu thiếu dữ liệu.",
+      "execution_time_sec": 55.39,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 11,
+        "unique_articles": [
+          "Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội",
+          "Điều 48. Giải quyết hưởng trợ cấp ốm đau",
+          "Điều 49. Gi ải quyết hưởng trợ cấp dưỡng sức, phục hồi sức khoẻ sau khi"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Người lao động có thể nộp hồ sơ nhận tiền trợ cấp thất nghiệp sau 7 ngày làm việc kể từ ngày nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe sau khi ốm đau.",
+        "missing_facts": [
+          "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+        ],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Người lao động có thể nộp hồ sơ nhận tiền trợ cấp thất nghiệp sau 7 ngày làm việc kể từ ngày nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe sau khi ốm đau.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNgười lao động có thể nộp hồ sơ nhận tiền trợ cấp thất nghiệp sau 7 ngày làm việc kể từ ngày nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe sau khi ốm đau.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 1 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 2 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 3 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Thời hạn áp dụng: 7 ngày làm việc kể từ ngày nhận hồ sơ từ người lao động.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "HIGH",
+        "reasons": [
+          "Phân loại in-scope và đưa ra kết luận khẳng định nhưng thiếu cảnh báo về phạm vi BHTN/BHYT/Thuế."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_C01",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Mức bồi thường tai nạn lao động cụ thể cho từng tỷ lệ suy giảm khả năng lao động dưới 5% là bao nhiêu tiền?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nhận diện thuộc phạm vi lao động, nhưng thông báo chưa đủ căn cứ quy định chi tiết dưới 5% trong KB.",
+      "execution_time_sec": 86.12,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "tai nạn lao động"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: tai nạn lao động)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 16,
+        "unique_articles": [
+          "Điều 160. Các hành vi bị nghiêm cấm khi sử dụng lao động là người",
+          "Điều 77. Hồ sơ đề nghị hưởng lương hưu đối với người tham gia bảo hiểm",
+          "Điều 90. Hồ sơ đề nghị hưởng chế độ tử tuất",
+          "Điều 26. Tiền lương thử việc",
+          "Điều 129. Bồi thường thiệt hại",
+          "Điều 60. Trách nhiệm của người sử dụng lao động về đào tạo, bồi"
+        ],
+        "primary_chunks_count": 6
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Mức bồi thường tai nạn lao động cụ thể cho từng tỷ lệ suy giảm khả năng lao động dưới 5% là 0 đồng tiền.",
+        "missing_facts": [
+          "Tính chất bệnh (ốm đau thông thường hay mắc bệnh cần chữa trị dài ngày; có giấy xác nhận của cơ sở y tế hay không)"
+        ],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "FAILED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [
+          "5%",
+          "0%",
+          "10%",
+          "20%",
+          "30%",
+          "40%",
+          "50%"
+        ],
+        "warning_messages": [
+          "Tỷ lệ '5%' có xuất hiện trong ngữ cảnh nhưng KHÔNG thuộc Điều/Khoản được trích dẫn làm căn cứ!",
+          "Điều kiện áp dụng 'Tỷ lệ 0% - 5%: Không bồi thường' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Mức bồi thường tai nạn lao động cụ thể cho từng tỷ lệ suy giảm khả năng lao động dưới 5% là 0 đồng tiền.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nMức bồi thường tai nạn lao động cụ thể cho từng tỷ lệ suy giảm khả năng lao động dưới 5% là 0 đồng tiền.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 160. Các hành vi bị nghiêm cấm khi sử dụng lao động là người, Khoản 1 - Trang 63 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 77. Hồ sơ đề nghị hưởng lương hưu đối với người tham gia bảo hiểm, Khoản 3 - Trang 56 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 160. Các hành vi bị nghiêm cấm khi sử dụng lao động là người, Khoản 2 - Trang 63 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 77. Hồ sơ đề nghị hưởng lương hưu đối với người tham gia bảo hiểm, Khoản 1 - Trang 56 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 77. Hồ sơ đề nghị hưởng lương hưu đối với người tham gia bảo hiểm, Khoản 2 - Trang 56 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 77. Hồ sơ đề nghị hưởng lương hưu đối với người tham gia bảo hiểm, Khoản 4 - Trang 56 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Tỷ lệ 0% - 5%: Không bồi thường\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Tỷ lệ '5%' có xuất hiện trong ngữ cảnh nhưng KHÔNG thuộc Điều/Khoản được trích dẫn làm căn cứ!\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Tỷ lệ 0% - 5%: Không bồi thường' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_C02",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Hồ sơ và thủ tục giám định y khoa để hưởng chế độ ốm đau dài ngày nộp tại đâu?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nhận diện thuộc BHXH, nhưng thông báo thông tư/hướng dẫn chi tiết về cơ sở giám định y khoa chưa có trong KB.",
+      "execution_time_sec": 86.99,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "ốm đau"
+        ],
+        "extracted_keywords": [
+          "chế độ ốm đau",
+          "trợ cấp ốm đau",
+          "mức hưởng chế độ ốm đau",
+          "ốm đau"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: chế độ ốm đau, ốm đau)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 13,
+        "unique_articles": [
+          "Điều 48. Giải quyết hưởng trợ cấp ốm đau",
+          "Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau",
+          "Điều 45. Trợ cấp ốm đau"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Hồ sơ và thủ tục giám định y khoa để hưởng chế độ ốm đau dài ngày phải nộp tại cơ quan bảo hiểm xã hội.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 13,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Hồ sơ và thủ tục giám định y khoa để hưởng chế độ ốm đau dài ngày phải nộp tại cơ quan bảo hiểm xã hội.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nHồ sơ và thủ tục giám định y khoa để hưởng chế độ ốm đau dài ngày phải nộp tại cơ quan bảo hiểm xã hội.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 2 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau, Khoản 1 - Trang 34 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 1 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 5 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 48. Giải quyết hưởng trợ cấp ốm đau, Khoản 3 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau, Khoản 2 - Trang 34 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau, Khoản 3 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 47. Hồ sơ đề nghị hưởng trợ cấp ốm đau, Khoản 4 - Trang 35 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 1 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 2 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 3 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 4 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 45. Trợ cấp ốm đau, Khoản 6 - Trang 33 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Thời hạn nộp hồ sơ chậm nhất là 45 ngày kể từ ngày trở lại làm việc.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_C03",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Doanh nghiệp không đóng BHXH cho người lao động bị phạt tiền từ bao nhiêu đến bao nhiêu theo Nghị định 12/2022/NĐ-CP?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nhận diện BHXH, nhưng nêu rõ Nghị định 12/2022 xử phạt VPHC chưa có trong KB, không tự bịa số tiền phạt.",
+      "execution_time_sec": 49.26,
+      "intent_agent_result": {
+        "domain": "mixed",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "bhxh",
+          "người lao động"
+        ],
+        "explanation": "Câu hỏi liên quan đến cả Bộ luật Lao động và Luật Bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 17,
+        "unique_articles": [
+          "Điều 62. Hợp đồng đào tạo nghề giữa người sử dụng lao động, người",
+          "Quy định mở đầu",
+          "Điều 90. Tiền lương",
+          "Điều 141. Quy định chuyển tiếp"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo Nghị định 12/2022/NĐ-CP, doanh nghiệp không đóng BHXH cho người lao động bị phạt tiền từ 100.000 đến 500.000 đồng.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Theo Nghị định 12/2022/NĐ-CP, doanh nghiệp không đóng BHXH cho người lao động bị phạt tiền từ 100.000 đến 500.000 đồng.",
+        "domain_tag": "mixed",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo Nghị định 12/2022/NĐ-CP, doanh nghiệp không đóng BHXH cho người lao động bị phạt tiền từ 100.000 đến 500.000 đồng.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 12 - Trang 88 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 1 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 2 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 3 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 4 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 5 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Mức phạt tiền từ 100.000 đến 500.000 đồng.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_C04",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Tiêu chuẩn chi tiết về trang thiết bị bảo hộ lao động cho công nhân xây dựng gồm những gì?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Thông báo quy chuẩn kỹ thuật an toàn lao động chi tiết cho ngành xây dựng chưa có trong KB.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_C05",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Mức đóng bảo hiểm xã hội tự nguyện thấp nhất năm 2026 dựa trên chuẩn nghèo nông thôn mới là bao nhiêu?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nêu rõ nguyên tắc tính theo chuẩn nghèo nông thôn nhưng cảnh báo chưa có số liệu chuẩn nghèo cụ thể năm 2026 trong KB.",
+      "execution_time_sec": 35.5,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "đóng bảo hiểm xã hội",
+          "bảo hiểm xã hội"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: bảo hiểm xã hội, đóng bảo hiểm xã hội)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 22,
+        "unique_articles": [
+          "Điều 31. Căn cứ đóng bảo hiểm xã hội",
+          "Điều 141. Quy định chuyển tiếp",
+          "Điều 5. Nguyên tắc bảo hiểm xã hội",
+          "Điều 6. Chính sách của Nhà nước đối với bảo hiểm xã hội"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Mức đóng bảo hiểm xã hội tự nguyện thấp nhất năm 2026 dựa trên chuẩn nghèo nông thôn mới là 20 lần mức tham gia đóng bảo hiểm xã hội bắt buộc.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 3,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Mức đóng bảo hiểm xã hội tự nguyện thấp nhất năm 2026 dựa trên chuẩn nghèo nông thôn mới là 20 lần mức tham gia đóng bảo hiểm xã hội bắt buộc.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nMức đóng bảo hiểm xã hội tự nguyện thấp nhất năm 2026 dựa trên chuẩn nghèo nông thôn mới là 20 lần mức tham gia đóng bảo hiểm xã hội bắt buộc.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 31. Căn cứ đóng bảo hiểm xã hội, Khoản 2 - Trang 23 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 31. Căn cứ đóng bảo hiểm xã hội, Khoản 1 - Trang 23 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 31. Căn cứ đóng bảo hiểm xã hội, Khoản 3 - Trang 24 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Theo quy định, mức đóng bảo hiểm xã hội tự nguyện được tính trên cơ sở thu nhập làm căn cứ đóng bảo hiểm xã hội tự nguyện do người tham gia lựa chọn. Mức này được xác định bằng 20 lần mức tham gia đóng bảo hiểm xã hội bắt buộc.\n+ LƯU Ý/NGOẠI LỆ: Không có ngoại lệ được nêu trong văn bản. Thời điểm hiệu lực của Luật Bảo hiểm xã hội 2024 là 01/07/2025.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_C06",
+      "group": "Nhóm C - Thuộc phạm vi nhưng thiếu căn cứ trong KB",
+      "question": "Cách tính định mức lao động cụ thể trong ngành may mặc theo quy định hiện hành?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Chỉ nêu nguyên tắc xây dựng định mức tại Điều 93 BLLĐ, không bịa ra công thức may mặc chi tiết.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_D01",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Tôi nghỉ việc thì có được hưởng chế độ không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Xác định thông tin còn thiếu (loại hợp đồng, lý do nghỉ việc, thời gian làm việc), không kết luận khẳng định vội vã.",
+      "execution_time_sec": 32.11,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 11,
+        "unique_articles": [
+          "Điều 51. Thời gian nghỉ việc hưởng chế độ thai sản khi khám thai",
+          "Điều 44. Thời gian hưởng chế độ khi chăm sóc con ốm đau",
+          "Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo dữ kiện, bạn có thể nghỉ việc hưởng chế độ thai sản khi khám thai tối đa 05 lần, mỗi lần không quá 02 ngày.",
+        "missing_facts": [
+          "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+        ],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 2,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong điều luật này, nên không cần nêu rõ các trường hợp ngoại lệ.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Theo dữ kiện, bạn có thể nghỉ việc hưởng chế độ thai sản khi khám thai tối đa 05 lần, mỗi lần không quá 02 ngày.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo dữ kiện, bạn có thể nghỉ việc hưởng chế độ thai sản khi khám thai tối đa 05 lần, mỗi lần không quá 02 ngày.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 51. Thời gian nghỉ việc hưởng chế độ thai sản khi khám thai, Khoản 1 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 51. Thời gian nghỉ việc hưởng chế độ thai sản khi khám thai, Khoản 2 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Theo nguồn 1, điều 51, thời gian nghỉ việc hưởng chế độ thai sản khi khám thai được tối đa 05 lần, mỗi lần không quá 02 ngày.\n+ LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong điều luật này, nên không cần nêu rõ các trường hợp ngoại lệ.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong điều luật này, nên không cần nêu rõ các trường hợp ngoại lệ.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_D02",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Công ty làm vậy có đúng luật không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Yêu cầu người dùng nêu rõ hành vi cụ thể của công ty, không đoán mò.",
+      "execution_time_sec": 19.62,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 18,
+        "unique_articles": [
+          "Điều 180. Nguyên tắc giải quyết tranh chấp lao động",
+          "Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không",
+          "Điều 208. Các hành vi bị nghiêm cấm trước, trong và sau khi đình công"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Công ty làm vậy không đúng luật.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ rõ ràng trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Công ty làm vậy không đúng luật.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nCông ty làm vậy không đúng luật.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 1 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 2 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 3 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 4 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 5 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 6 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động nước ngoài làm việc tại Việt Nam không phải là Chủ tịch Hội đồng quản trị hoặc thành viên Hội đồng quản trị của công ty cổ phần có giá trị góp vốn theo quy định của Chính phủ.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ rõ ràng trong văn bản pháp luật.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ rõ ràng trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_D03",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Tôi có được nhận tiền bảo hiểm không?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Yêu cầu làm rõ loại chế độ bảo hiểm (ốm đau, thai sản, BHXH một lần, hay tai nạn lao động).",
+      "execution_time_sec": 41.09,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 22,
+        "unique_articles": [
+          "Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo",
+          "Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội",
+          "Điều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm",
+          "Điều 133. Nội dung quản lý nhà nước về bảo hiểm xã hội"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo văn bản pháp luật được cung cấp, bạn có được nhận tiền bảo hiểm xã hội (BHXH) không?",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Theo văn bản pháp luật được cung cấp, bạn có được nhận tiền bảo hiểm xã hội (BHXH) không?",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo văn bản pháp luật được cung cấp, bạn có được nhận tiền bảo hiểm xã hội (BHXH) không?\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 4 - Trang 55 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 1 - Trang 54 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 2 - Trang 54 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 3 - Trang 54 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 5 - Trang 55 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 75. T ạm d ừng, ch ấm d ứt, ti ếp t ục hư ởng lương hưu, tr ợ cấp b ảo, Khoản 6 - Trang 55 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Theo văn bản, bạn cần đáp ứng các điều kiện sau:\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "MEDIUM",
+        "reasons": [
+          "Chatbot đưa ra câu trả lời khẳng định tuyệt đối cho câu hỏi mơ hồ thiếu dữ kiện mà không hỏi lại hoặc nêu điều kiện."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_D04",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Công ty không trả tiền cho tôi thì phải làm sao?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Yêu cầu làm rõ tiền gì (lương, làm thêm giờ, trợ cấp thôi việc) và hướng dẫn khiếu nại theo BLLĐ.",
+      "execution_time_sec": 30.06,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 13,
+        "unique_articles": [
+          "Điều 95. Trả lương",
+          "Điều 97. Kỳ hạn trả lương",
+          "Điều 56. Quyền và nghĩa vụ của doanh nghiệp cho thuê lại lao động"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Nếu công ty không trả lương cho bạn đúng hạn, bạn có quyền yêu cầu họ đền bù cho số tiền lãi của số tiền lương chậm trả.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 4,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Nếu công ty không trả lương cho bạn đúng hạn, bạn có quyền yêu cầu họ đền bù cho số tiền lãi của số tiền lương chậm trả.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNếu công ty không trả lương cho bạn đúng hạn, bạn có quyền yêu cầu họ đền bù cho số tiền lãi của số tiền lương chậm trả.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 3 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 4 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 1 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 2 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Nếu công ty đã tìm mọi biện pháp khắc phục nhưng không thể trả lương đúng hạn, họ không được chậm quá 30 ngày. Nếu trả lương chậm từ 15 ngày trở lên, họ phải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi họ mở tài khoản trả lương cho người lao động công bố tại thời điểm trả lương.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_D05",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Tôi làm việc 2 năm thì được hưởng bao nhiêu?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Chỉ ra thiếu dữ kiện: hỏi về trợ cấp thôi việc, phép năm hay quyền lợi gì khi chấm dứt HĐLĐ.",
+      "execution_time_sec": 68.97,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 20,
+        "unique_articles": [
+          "Điều 141. Quy định chuyển tiếp",
+          "Điều 46. Dưỡng sức, phục hồi sức khoẻ sau khi ốm đau",
+          "Điều 8. Hợp tác quốc tế về bảo hiểm xã hội",
+          "Điều 70. Hưởng bảo hiểm xã hội một lần"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Nếu bạn đã làm việc 2 năm, thời gian này sẽ được tính để hưởng bảo hiểm xã hội theo quy định của Chính phủ.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Nếu bạn đã làm việc 2 năm, thời gian này sẽ được tính để hưởng bảo hiểm xã hội theo quy định của Chính phủ.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNếu bạn đã làm việc 2 năm, thời gian này sẽ được tính để hưởng bảo hiểm xã hội theo quy định của Chính phủ.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 7 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 1 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 2 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 3 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 4 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 5 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Theo Điều 141, người lao động có thời gian làm việc trong khu vực nhà nước trước ngày 01/01/1995 được tính để hưởng bảo hiểm xã hội theo quy định của Chính phủ. Trong trường hợp bạn đã làm việc 2 năm, thời gian này sẽ được tính để hưởng bảo hiểm xã hội.\n+ LƯU Ý/NGOẠI LỆ: Không có ngoại lệ trong Điều 141 của Luật Bảo hiểm xã hội 2024. Thời gian làm việc 2 năm sẽ được tính để hưởng bảo hiểm xã hội theo quy định của Chính phủ.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "FAIL",
+        "risk_severity": "MEDIUM",
+        "reasons": [
+          "Chatbot đưa ra câu trả lời khẳng định tuyệt đối cho câu hỏi mơ hồ thiếu dữ kiện mà không hỏi lại hoặc nêu điều kiện."
+        ]
+      }
+    },
+    {
+      "test_id": "OOS_D06",
+      "group": "Nhóm D - Câu hỏi mơ hồ, thiếu dữ kiện",
+      "question": "Sếp bắt tôi ký giấy cam kết thì có hợp pháp không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Yêu cầu người dùng cung cấp nội dung giấy cam kết (cam kết không làm việc cho đối thủ, cam kết đào tạo, v.v.).",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E01",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Công ty chậm trả lương 2 tháng và không đóng thuế TNCN cho tôi thì có vi phạm không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách 2 phần: Chậm trả lương thuộc BLLĐ (trả lời có căn cứ Điều 97/99); Thuế TNCN ngoài phạm vi KB (nêu rõ giới hạn).",
+      "execution_time_sec": 47.88,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 17,
+        "unique_articles": [
+          "Điều 97. Kỳ hạn trả lương",
+          "Điều 66. Mức lương hưu hằng tháng",
+          "Điều 102. Khấu trừ tiền lương",
+          "Điều 25. Thời gian thử việc"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Công ty chậm trả lương 2 tháng và không đóng thuế TNCN cho tôi là vi phạm theo Điều 97 của Bộ luật Lao động (18/VBHN-VPQH) Khoản 4.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 9,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ:' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Công ty chậm trả lương 2 tháng và không đóng thuế TNCN cho tôi là vi phạm theo Điều 97 của Bộ luật Lao động (18/VBHN-VPQH) Khoản 4.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nCông ty chậm trả lương 2 tháng và không đóng thuế TNCN cho tôi là vi phạm theo Điều 97 của Bộ luật Lao động (18/VBHN-VPQH) Khoản 4.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 4 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 66. Mức lương hưu hằng tháng, Khoản 2 - Trang 49 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 1 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 2 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 97. Kỳ hạn trả lương, Khoản 3 - Trang 40 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 66. Mức lương hưu hằng tháng, Khoản 1 - Trang 48 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 66. Mức lương hưu hằng tháng, Khoản 3 - Trang 49 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 66. Mức lương hưu hằng tháng, Khoản 4 - Trang 49 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 66. Mức lương hưu hằng tháng, Khoản 5 - Trang 49 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Mức chậm trả lương không quá 30 ngày, nếu chậm từ 15 ngày trở lên thì người sử dụng lao động phải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm tính theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi người sử dụng lao động mở tài khoản trả lương cho người lao động công bố tại thời điểm trả lương.\n+ Lưu ý/ngoại lệ:\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Không áp dụng đối với trường hợp người lao động thuộc đối tượng được hưởng lương hưu hằng tháng theo Luật Bảo hiểm xã hội (41/2024/QH15) Điều 66. Mức lương hưu hằng tháng - Khoản 2.\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ:' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E02",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Tôi nghỉ việc, muốn nhận trợ cấp thôi việc và bảo hiểm thất nghiệp thì điều kiện từng khoản là gì?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách bạch: Trả lời trợ cấp thôi việc theo Điều 46 BLLĐ; Nêu rõ BHTN thuộc Luật Việc làm chưa có trong KB.",
+      "execution_time_sec": 67.6,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "trợ cấp thôi việc"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: trợ cấp thôi việc)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 13,
+        "unique_articles": [
+          "Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội",
+          "Điều 46. Trợ cấp thôi việc",
+          "Điều 57. Th ời gian ngh ỉ việc hưởng chế độ khi thực hiện các bi ện pháp"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Tôi muốn nhận trợ cấp thôi việc và bảo hiểm thất nghiệp, theo điều kiện từng khoản:\n\n1. Trách nhiệm của cơ quan bảo hiểm xã hội:\n   - Khoản 5: Tiếp nhận hồ sơ đề nghị hưởng và giải quyết hưởng chế độ bảo hiểm xã hội.\n   - Khoản 6: Xác nhận thời gian đóng bảo hiểm xã hội, bảo hiểm thất nghiệp cho từng người lao động.\n\n2. Trợ cấp thôi việc:\n   - Khoản 2: Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n\n3. Bảo hiểm thất nghiệp:\n   - Khoản 2: Thời gian nghỉ việc hưởng chế độ thai sản quy định tại khoản 1 Điều này tính cả ngày nghỉ lễ, tết, ngày nghỉ hằng tuần.",
+        "missing_facts": [
+          "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+        ],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 13,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Tôi muốn nhận trợ cấp thôi việc và bảo hiểm thất nghiệp, theo điều kiện từng khoản:\n\n1. Trách nhiệm của cơ quan bảo hiểm xã hội:\n   - Khoản 5: Tiếp nhận hồ sơ đề nghị hưởng và giải quyết hưởng chế độ bảo hiểm xã hội.\n   - Khoản 6: Xác nhận thời gian đóng bảo hiểm xã hội, bảo hiểm thất nghiệp cho từng người lao động.\n\n2. Trợ cấp thôi việc:\n   - Khoản 2: Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n\n3. Bảo hiểm thất nghiệp:\n   - Khoản 2: Thời gian nghỉ việc hưởng chế độ thai sản quy định tại khoản 1 Điều này tính cả ngày nghỉ lễ, tết, ngày nghỉ hằng tuần.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTôi muốn nhận trợ cấp thôi việc và bảo hiểm thất nghiệp, theo điều kiện từng khoản:\n\n1. Trách nhiệm của cơ quan bảo hiểm xã hội:\n   - Khoản 5: Tiếp nhận hồ sơ đề nghị hưởng và giải quyết hưởng chế độ bảo hiểm xã hội.\n   - Khoản 6: Xác nhận thời gian đóng bảo hiểm xã hội, bảo hiểm thất nghiệp cho từng người lao động.\n\n2. Trợ cấp thôi việc:\n   - Khoản 2: Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n\n3. Bảo hiểm thất nghiệp:\n   - Khoản 2: Thời gian nghỉ việc hưởng chế độ thai sản quy định tại khoản 1 Điều này tính cả ngày nghỉ lễ, tết, ngày nghỉ hằng tuần.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 5 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 6 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 46. Trợ cấp thôi việc, Khoản 2 - Trang 21 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 57. Th ời gian ngh ỉ việc hưởng chế độ khi thực hiện các bi ện pháp, Khoản 2 - Trang 41 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 1 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 2 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 3 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 4 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 7 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 46. Trợ cấp thôi việc, Khoản 1 - Trang 21 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 46. Trợ cấp thôi việc, Khoản 3 - Trang 21 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 46. Trợ cấp thôi việc, Khoản 4 - Trang 21 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 57. Th ời gian ngh ỉ việc hưởng chế độ khi thực hiện các bi ện pháp, Khoản 1 - Trang 41 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Thời gian làm việc để tính trợ cấp thôi việc: Tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội - Khoản 1: Nêu rõ trách nhiệm của cơ quan bảo hiểm xã hội trong việc tiếp nhận hồ sơ đề nghị hưởng và giải quyết hưởng chế độ bảo hiểm xã hội.\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E03",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Tôi sinh con, muốn hỏi về thời gian nghỉ thai sản và mức chi trả bảo hiểm y tế khi sinh?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách bạch: Nghỉ thai sản 6 tháng theo Luật BHXH 2024; Chi trả BHYT thuộc Luật BHYT chưa có trong KB.",
+      "execution_time_sec": 50.93,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "nghỉ thai sản"
+        ],
+        "extracted_keywords": [
+          "nghỉ thai sản",
+          "sinh con",
+          "thai sản",
+          "trợ cấp thai sản",
+          "thời gian hưởng chế độ thai sản"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: thai sản, nghỉ thai sản, sinh con)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 17,
+        "unique_articles": [
+          "Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con",
+          "Điều 52. Thời gian nghỉ việc hưởng chế độ thai sản khi sảy thai, phá thai,",
+          "Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo dữ kiện, tôi sinh con và muốn hỏi về thời gian nghỉ thai sản và mức chi trả bảo hiểm y tế khi sinh, tôi cần xem xét theo các điều luật được nêu trên.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 16,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Theo dữ kiện, tôi sinh con và muốn hỏi về thời gian nghỉ thai sản và mức chi trả bảo hiểm y tế khi sinh, tôi cần xem xét theo các điều luật được nêu trên.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo dữ kiện, tôi sinh con và muốn hỏi về thời gian nghỉ thai sản và mức chi trả bảo hiểm y tế khi sinh, tôi cần xem xét theo các điều luật được nêu trên.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 4 - Trang 38 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 9 - Trang 39 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 52. Thời gian nghỉ việc hưởng chế độ thai sản khi sảy thai, phá thai,, Khoản 3 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 1 - Trang 64 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 1 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 2 - Trang 38 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 3 - Trang 38 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 5 - Trang 38 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con, Khoản 6 - Trang 38 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 52. Thời gian nghỉ việc hưởng chế độ thai sản khi sảy thai, phá thai,, Khoản 1 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 52. Thời gian nghỉ việc hưởng chế độ thai sản khi sảy thai, phá thai,, Khoản 2 - Trang 37 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 2 - Trang 65 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 3 - Trang 65 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 4 - Trang 65 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 5 - Trang 65 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 94. Đối tượng và điều kiện hưởng trợ cấp thai sản, Khoản 6 - Trang 65 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Thời gian nghỉ việc hưởng chế độ thai sản quy định tại các khoản 1, 4, 5, 6 và 7 Điều này tính cả ngày nghỉ lễ, tết, ngày nghỉ hằng tuần.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Thời gian nghỉ việc hưởng chế độ thai sản quy định tại các khoản 1, 4, 5, 6 và 7 Điều này tính cả ngày nghỉ lễ, tết, ngày nghỉ hằng tuần.\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E04",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Công ty nợ lương, nợ BHXH và không làm thủ tục hưởng trợ cấp thất nghiệp cho tôi thì xử lý thế nào?",
+      "expected_intent": "mixed",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách bạch: Xử lý nợ lương (BLLĐ), nợ BHXH (Luật BHXH); Riêng trợ cấp thất nghiệp nêu rõ thuộc Luật Việc làm.",
+      "execution_time_sec": 30.68,
+      "intent_agent_result": {
+        "domain": "mixed",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "bhxh"
+        ],
+        "explanation": "Câu hỏi liên quan đến cả Bộ luật Lao động và Luật Bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 14,
+        "unique_articles": [
+          "Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội",
+          "Điều 24. Trình t ự, thủ tục thực hiện chế độ đối với người lao động không",
+          "Điều 54. Doanh nghiệp cho thuê lại lao động",
+          "Điều 17. Hành vi người sử dụng lao động không được làm khi giao kết,"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Nếu công ty nợ lương, nợ BHXH và không làm thủ tục hưởng trợ cấp thất nghiệp cho bạn, bạn có quyền yêu cầu cơ quan bảo hiểm xã hội (BHXH) thực hiện các biện pháp xử lý như sau:",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Nếu công ty nợ lương, nợ BHXH và không làm thủ tục hưởng trợ cấp thất nghiệp cho bạn, bạn có quyền yêu cầu cơ quan bảo hiểm xã hội (BHXH) thực hiện các biện pháp xử lý như sau:",
+        "domain_tag": "mixed",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNếu công ty nợ lương, nợ BHXH và không làm thủ tục hưởng trợ cấp thất nghiệp cho bạn, bạn có quyền yêu cầu cơ quan bảo hiểm xã hội (BHXH) thực hiện các biện pháp xử lý như sau:\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 6 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 1 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 2 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 3 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 4 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 18. Trách nhiệm của cơ quan bảo hiểm xã hội, Khoản 5 - Trang 15 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Bạn phải đủ điều kiện để hưởng lương hưu và chưa đủ tuổi hưởng trợ cấp hưu trí xã hội.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong văn bản pháp luật được cung cấp.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E05",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Hết hạn hợp đồng lao động, công ty không gia hạn và tịch thu luôn xe máy tôi gửi ở bãi xe thì sao?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách bạch: Hết hạn HĐLĐ thuộc BLLĐ (Điều 34); Hành vi tịch thu xe máy thuộc quan hệ Dân sự/Hình sự ngoài phạm vi KB.",
+      "execution_time_sec": 29.01,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "hợp đồng lao động",
+          "hết hạn hợp đồng"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: hợp đồng lao động, hết hạn hợp đồng)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 20,
+        "unique_articles": [
+          "Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là",
+          "Điều 20. Nhi ệm vụ, quyền hạn và trách nhi ệm của Hội đồng quản lý b ảo",
+          "Điều 161. Lao động là người giúp việc gia đình",
+          "Điều 4. Chính sách của Nhà nước về lao động"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Khi người sử dụng lao động (người giúp việc gia đình) hết hạn hợp đồng lao động và công ty không gia hạn hợp đồng, người giúp việc gia đình có quyền được trả tiền tàu xe đi đường khi người giúp việc gia đình thôi việc về nơi cư trú, trừ trường hợp người giúp việc gia đình chấm dứt hợp đồng lao động trước thời hạn.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong các văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Khi người sử dụng lao động (người giúp việc gia đình) hết hạn hợp đồng lao động và công ty không gia hạn hợp đồng, người giúp việc gia đình có quyền được trả tiền tàu xe đi đường khi người giúp việc gia đình thôi việc về nơi cư trú, trừ trường hợp người giúp việc gia đình chấm dứt hợp đồng lao động trước thời hạn.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nKhi người sử dụng lao động (người giúp việc gia đình) hết hạn hợp đồng lao động và công ty không gia hạn hợp đồng, người giúp việc gia đình có quyền được trả tiền tàu xe đi đường khi người giúp việc gia đình thôi việc về nơi cư trú, trừ trường hợp người giúp việc gia đình chấm dứt hợp đồng lao động trước thời hạn.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 6 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 1 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 2 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 3 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 4 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 163. Nghĩa vụ của người sử dụng lao động khi sử dụng lao động là, Khoản 5 - Trang 64 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người giúp việc gia đình phải chấm dứt hợp đồng lao động trước thời hạn để có quyền được trả tiền tàu xe đi đường.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong các văn bản pháp luật được cung cấp.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong các văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_E06",
+      "group": "Nhóm E - Câu hỏi kết hợp trong và ngoài phạm vi",
+      "question": "Tôi bị sa thải trái luật, có được bồi thường tiền lương và khởi kiện ra tòa án hình sự phạt tù giám đốc không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Tách bạch: Bồi thường sa thải trái luật theo Điều 41 BLLĐ; Vấn đề phạt tù hình sự thuộc Bộ luật Hình sự ngoài phạm vi KB.",
+      "execution_time_sec": 29.82,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "bị sa thải"
+        ],
+        "extracted_keywords": [
+          "xử lý kỷ luật lao động sa thải",
+          "sa thải"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: sa thải)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 7,
+        "unique_articles": [
+          "Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải",
+          "Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo dữ kiện, người lao động bị sa thải trái luật không có quyền bồi thường tiền lương và không có quyền khởi kiện ra tòa án hình sự phạt tù giám đốc.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong dữ kiện.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Theo dữ kiện, người lao động bị sa thải trái luật không có quyền bồi thường tiền lương và không có quyền khởi kiện ra tòa án hình sự phạt tù giám đốc.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo dữ kiện, người lao động bị sa thải trái luật không có quyền bồi thường tiền lương và không có quyền khởi kiện ra tòa án hình sự phạt tù giám đốc.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải, Khoản 3 - Trang 50 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải, Khoản 1 - Trang 50 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động, Khoản 1 - Trang 51 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải, Khoản 2 - Trang 50 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải, Khoản 4 - Trang 51 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động, Khoản 2 - Trang 51 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động bị xử lý kỷ luật kéo dài thời hạn nâng lương hoặc cách chức mà tái phạm trong thời gian chưa xóa kỷ luật. Tái phạm là trường hợp người lao động lặp lại hành vi vi phạm đã bị xử lý kỷ luật mà chưa được xóa kỷ luật theo quy định tại Điều 126 của Bộ luật này.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong dữ kiện.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ trong dữ kiện.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F01",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Nghỉ đẻ có được nhận tiền không?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Hiểu 'nghỉ đẻ' là chế độ thai sản trong BHXH, trả lời đúng quyền lợi thai sản theo Luật BHXH.",
+      "execution_time_sec": 29.51,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "nghỉ đẻ",
+          "đẻ"
+        ],
+        "extracted_keywords": [
+          "chế độ thai sản",
+          "nghỉ đẻ",
+          "sinh con",
+          "thai sản",
+          "nghỉ thai sản lao động nữ"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: nghỉ đẻ)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 12,
+        "unique_articles": [
+          "Điều 139. Nghỉ thai sản",
+          "Điều 55. Chế độ thai sản của lao động nữ nhờ mang thai hộ",
+          "Điều 54. Chế độ thai sản của lao động nữ mang thai hộ"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Nghỉ đẻ được nhận tiền.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 7,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Nghỉ đẻ được nhận tiền.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNghỉ đẻ được nhận tiền.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 139. Nghỉ thai sản, Khoản 5 - Trang 56 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 55. Chế độ thai sản của lao động nữ nhờ mang thai hộ, Khoản 1 - Trang 40 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 139. Nghỉ thai sản, Khoản 2 - Trang 55 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 139. Nghỉ thai sản, Khoản 1 - Trang 55 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 139. Nghỉ thai sản, Khoản 3 - Trang 55 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 139. Nghỉ thai sản, Khoản 4 - Trang 55 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 55. Chế độ thai sản của lao động nữ nhờ mang thai hộ, Khoản 2 - Trang 40 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng. Trường hợp sinh con thứ hai, lao động nữ được nghỉ thai sản trước và sau khi sinh con là 07 tháng. Thời gian nghỉ trước khi sinh không quá 02 tháng. Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ hai trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Thời điểm hiệu lực của Luật Bảo hiểm xã hội 2024 là 01/07/2025.\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F02",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Công ty bắt làm thêm giờ vào ban đêm thì tính tiền thế nào?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nhận diện làm đêm và làm thêm giờ theo Điều 98 BLLĐ 2019, tính đúng tỷ lệ phụ trội.",
+      "execution_time_sec": 28.83,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "làm thêm giờ"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: làm thêm giờ)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 5,
+        "unique_articles": [
+          "Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm",
+          "Điều 106. Giờ làm việc ban đêm"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Công ty bắt làm thêm giờ vào ban đêm thì người lao động được hưởng 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 4,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Công ty bắt làm thêm giờ vào ban đêm thì người lao động được hưởng 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nCông ty bắt làm thêm giờ vào ban đêm thì người lao động được hưởng 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm, Khoản 2 - Trang 41 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm, Khoản 3 - Trang 41 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm, Khoản 4 - Trang 41 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm, Khoản 1 - Trang 41 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động làm thêm giờ vào ban đêm ngoài việc trả lương theo quy định tại khoản 1 và khoản 2 Điều này, còn được trả thêm 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F03",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Bị đuổi việc bất ngờ có được nhận tiền không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Hiểu 'đuổi việc' là đơn phương chấm dứt HĐLĐ / sa thải, trả lời căn cứ BLLĐ.",
+      "execution_time_sec": 25.58,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "đuổi việc"
+        ],
+        "extracted_keywords": [
+          "kỷ luật sa thải",
+          "đơn phương chấm dứt hợp đồng lao động"
+        ],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 16,
+        "unique_articles": [
+          "Điều 34. Các trường hợp chấm dứt hợp đồng lao động",
+          "Điều 38. Hủy bỏ việc đơn phương chấm dứt hợp đồng lao động",
+          "Điều 162. Hợp đồng lao động đối với lao động là người giúp việc gia đình",
+          "Điều 204. Trường hợp đình công bất hợp pháp"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Bị đuổi việc bất ngờ không được nhận tiền.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Bị đuổi việc bất ngờ không được nhận tiền.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nBị đuổi việc bất ngờ không được nhận tiền.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 8 - Trang 15 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 1 - Trang 14 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 2 - Trang 14 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 3 - Trang 14 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 4 - Trang 14 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 34. Các trường hợp chấm dứt hợp đồng lao động, Khoản 5 - Trang 15 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động bị đuổi việc bất ngờ không được nhận tiền. Điều này dựa trên Khoản 1 Điều 34 của Bộ luật Lao động, quy định rõ: \"Hết hạn hợp đồng lao động, trừ trường hợp quy định tại khoản 4 Điều 177 của Bộ luật này.\"\n+ LƯU Ý/NGOẠI LỆ: Điều 34 của Bộ luật Lao động không quy định cụ thể về trường hợp bị đuổi việc bất ngờ, nên người lao động cần nêu rõ nguyên nhân cụ thể để được giải quyết.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Điều 34 của Bộ luật Lao động không quy định cụ thể về trường hợp bị đuổi việc bất ngờ, nên người lao động cần nêu rõ nguyên nhân cụ thể để được giải quyết.\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F04",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Lương bị công ty giam giữ lại không trả thì xử lý thế nào?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Hiểu 'giam giữ lương' là nợ lương / khấu trừ lương bất hợp pháp theo BLLĐ.",
+      "execution_time_sec": 22.22,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 17,
+        "unique_articles": [
+          "Điều 217. Xử lý vi phạm",
+          "Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động",
+          "Điều 125. Áp dụng hình thức xử lý kỷ luật sa thải",
+          "Điều 128. Tạm đình chỉ công việc"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Lương bị công ty giam giữ lại không trả thì người lao động có thể bị xử lý kỷ luật lao động theo quy định của Bộ luật Lao động (18/VBHN-VPQH) Điều 217, Khoản 2.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 5,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Lương bị công ty giam giữ lại không trả thì người lao động có thể bị xử lý kỷ luật lao động theo quy định của Bộ luật Lao động (18/VBHN-VPQH) Điều 217, Khoản 2.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nLương bị công ty giam giữ lại không trả thì người lao động có thể bị xử lý kỷ luật lao động theo quy định của Bộ luật Lao động (18/VBHN-VPQH) Điều 217, Khoản 2.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 217. Xử lý vi phạm, Khoản 1 - Trang 86 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động, Khoản 1 - Trang 51 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 217. Xử lý vi phạm, Khoản 2 - Trang 86 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 217. Xử lý vi phạm, Khoản 3 - Trang 86 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 126. Xóa kỷ luật, giảm thời hạn chấp hành kỷ luật lao động, Khoản 2 - Trang 51 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động bị xử lý kỷ luật lao động kéo dài thời hạn nâng lương hoặc cách chức. Tái phạm là trường hợp người lao động lặp lại hành vi vi phạm đã bị xử lý kỷ luật mà chưa được xóa kỷ luật theo quy định tại Điều 126 của Bộ luật này.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F05",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Đóng bảo hiểm bao nhiêu năm thì được hưởng lương hưu khi về già?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Hiểu 'về già' là chế độ hưu trí trong Luật BHXH, nêu điều kiện số năm đóng BHXH.",
+      "execution_time_sec": 26.68,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [
+          "lương hưu"
+        ],
+        "extracted_keywords": [
+          "chế độ hưu trí",
+          "tuổi nghỉ hưu",
+          "lương hưu",
+          "điều kiện hưởng lương hưu"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: lương hưu)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 13,
+        "unique_articles": [
+          "Điều 169. Tuổi nghỉ hưu",
+          "Điều 98. Đối tượng và điều kiện hưởng lương hưu",
+          "Điều 24. Trình t ự, thủ tục thực hiện chế độ đối với người lao động không",
+          "Điều 101. Thời điểm hưởng lương hưu"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Khi người lao động đủ điều kiện về thời gian đóng bảo hiểm xã hội, họ có quyền hưởng lương hưu khi về già.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Khi người lao động đủ điều kiện về thời gian đóng bảo hiểm xã hội, họ có quyền hưởng lương hưu khi về già.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nKhi người lao động đủ điều kiện về thời gian đóng bảo hiểm xã hội, họ có quyền hưởng lương hưu khi về già.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 169. Tuổi nghỉ hưu, Khoản 1 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 98. Đối tượng và điều kiện hưởng lương hưu, Khoản 1 - Trang 66 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 169. Tuổi nghỉ hưu, Khoản 2 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 169. Tuổi nghỉ hưu, Khoản 3 - Trang 65 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 169. Tuổi nghỉ hưu, Khoản 4 - Trang 66 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 169. Tuổi nghỉ hưu, Khoản 5 - Trang 66 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động phải đủ 15 năm đóng bảo hiểm xã hội.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_F06",
+      "group": "Nhóm F - Từ khóa gây nhầm lẫn",
+      "question": "Tôi muốn rút bảo hiểm một lần sau khi nghỉ việc thì cần điều kiện gì?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Hiểu 'rút bảo hiểm một lần' là BHXH một lần, trích dẫn quy định hưởng BHXH 1 lần.",
+      "execution_time_sec": 30.55,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 14,
+        "unique_articles": [
+          "Điều 102. Hưởng bảo hiểm xã hội một lần",
+          "Điều 58. Tr ợ cấp một lần khi sinh con, nh ận con khi nh ờ mang thai h ộ",
+          "Điều 79. Giải quyết hưởng lương hưu, hưởng bảo hiểm xã hội một lần"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo văn bản pháp luật được cung cấp, để rút bảo hiểm xã hội một lần sau khi nghỉ việc, người lao động cần đáp ứng các điều kiện sau:",
+        "missing_facts": [
+          "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+        ],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Theo văn bản pháp luật được cung cấp, để rút bảo hiểm xã hội một lần sau khi nghỉ việc, người lao động cần đáp ứng các điều kiện sau:",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo văn bản pháp luật được cung cấp, để rút bảo hiểm xã hội một lần sau khi nghỉ việc, người lao động cần đáp ứng các điều kiện sau:\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 5 - Trang 69 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 1 - Trang 68 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 2 - Trang 68 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 3 - Trang 69 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 4 - Trang 69 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 102. Hưởng bảo hiểm xã hội một lần, Khoản 6 - Trang 69 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người lao động đủ điều kiện quy định tại các điểm b, c và d khoản 1 Điều 102 của Luật Bảo hiểm xã hội 2024, vừa đủ điều kiện hưởng lương hưu vừa đủ điều kiện hưởng bảo hiểm xã hội một lần, thì được lựa chọn hưởng lương hưu hoặc bảo hiểm xã hội một lần.\n+ Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật được cung cấp.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ: Không có lưu ý hoặc ngoại lệ được nêu trong văn bản pháp luật được cung cấp.' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G01",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Luật thuế thu nhập cá nhân mới sửa đổi năm 2026 quy định mức giảm trừ gia cảnh thế nào?",
+      "expected_intent": "out_of_scope",
+      "expected_is_in_scope": false,
+      "expected_behavior": "Nhận diện luật thuế mới năm 2026 không có trong KB, không bịa đặt số tiền.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G02",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Mức lương tối thiểu vùng mới nhất áp dụng từ năm 2026 là bao nhiêu?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Nêu nguyên tắc lương tối thiểu theo BLLĐ Điều 91 nhưng cảnh báo Nghị định lương tối thiểu cụ thể năm 2026 chưa có trong KB.",
+      "execution_time_sec": 30.03,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Nhận diện thuộc lĩnh vực lao động chung dựa trên từ khóa ngữ cảnh"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 12,
+        "unique_articles": [
+          "Điều 91. Mức lương tối thiểu",
+          "Điều 140. Hiệu lực thi hành",
+          "Điều 217. Xử lý vi phạm"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Mức lương tối thiểu vùng mới nhất áp dụng từ năm 2026 là 15 triệu đồng.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'Lưu ý/ngoại lệ:' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Mức lương tối thiểu vùng mới nhất áp dụng từ năm 2026 là 15 triệu đồng.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nMức lương tối thiểu vùng mới nhất áp dụng từ năm 2026 là 15 triệu đồng.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 91. Mức lương tối thiểu, Khoản 2 - Trang 38 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 140. Hiệu lực thi hành, Khoản 1 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 91. Mức lương tối thiểu, Khoản 1 - Trang 38 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 91. Mức lương tối thiểu, Khoản 3 - Trang 38 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 91. Mức lương tối thiểu, Khoản 4 - Trang 39 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 140. Hiệu lực thi hành, Khoản 2 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Mức lương tối thiểu được điều chỉnh dựa trên mức sống tối thiểu của người lao động và gia đình họ; tương quan giữa mức lương tối thiểu và mức lương trên thị trường; chỉ số giá tiêu dùng, tốc độ tăng trưởng kinh tế; quan hệ cung, cầu lao động; việc làm và thất nghiệp; năng suất lao động; khả năng chi trả của doanh nghiệp.\n+ Lưu ý/ngoại lệ:\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Luật Bảo hiểm xã hội (41/2024/QH15) [Luật BHXH 2024 có hiệu lực từ 01/07/2025] | Điều 140. Hiệu lực thi hành | Khoản 1 (Trang 86)\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021).\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'Lưu ý/ngoại lệ:' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G03",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Điều 100 Bộ luật Lao động năm 2012 quy định về vấn đề gì?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Cảnh báo BLLĐ 2012 đã hết hiệu lực và được thay thế bởi BLLĐ 2019 (18/VBHN-VPQH), không trả lời như thể luật 2012 còn hiệu lực.",
+      "execution_time_sec": 0.0,
+      "intent_agent_result": {
+        "domain": "out_of_scope",
+        "is_in_scope": false,
+        "matched_concepts": [],
+        "extracted_keywords": [],
+        "explanation": "Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội"
+      },
+      "retrieval_agent_result": null,
+      "legal_analysis_result": null,
+      "validation_agent_result": null,
+      "final_response": {
+        "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+        "domain_tag": "out_of_scope",
+        "is_answerable": false,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### ⚠️ THÔNG BÁO PHẠM VI TƯ VẤN\n\n**Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.**\n\nHệ thống Agentic Legal Chatbot hiện tại chuyên sâu tư vấn về **Bộ luật Lao động** (Văn bản hợp nhất số 18/VBHN-VPQH) và **Luật Bảo hiểm xã hội** (Luật số 41/2024/QH15) của Việt Nam.\n\nVấn đề bạn quan tâm (Không phát hiện từ khóa liên quan đến quan hệ lao động hoặc bảo hiểm xã hội) thuộc lĩnh vực khác. Để được hỗ trợ chính xác, vui lòng đặt các câu hỏi liên quan đến hợp đồng lao động, tiền lương, thời giờ làm việc, nghỉ phép, chế độ thai sản, ốm đau, hưu trí hoặc quyền lợi bảo hiểm xã hội.\n"
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G04",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Nghị định mới nhất hướng dẫn Luật Bảo hiểm xã hội 2024 đã được ban hành chưa và quy định gì?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Thông báo KB chỉ chứa Luật BHXH số 41/2024/QH15, chưa có Nghị định hướng dẫn chi tiết.",
+      "execution_time_sec": 35.81,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "bảo hiểm xã hội"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: bảo hiểm xã hội)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 19,
+        "unique_articles": [
+          "Điều 141. Quy định chuyển tiếp",
+          "Điều 38. Chậm đóng bảo hiểm xã hội bắt buộc, bảo hiểm thất nghiệp",
+          "Điều 106. Hồ sơ đề nghị hưởng bảo hiểm xã hội một lần",
+          "Điều 30. Xác đ ịnh đối tượng tham gia b ảo hiểm xã h ội bắt buộc và phát"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Nghị định mới nhất hướng dẫn Luật Bảo hiểm xã hội 2024 đã được ban hành và quy định chính sách chuyển tiếp cho người đang hưởng trợ cấp mất sức lao động, trợ cấp tai nạn lao động, bệnh nghề nghiệp, trợ cấp tuất hằng tháng, trợ cấp hằng tháng đối với cán bộ xã, phường, thị trấn đã nghỉ việc, trợ cấp hằng tháng đối với công nhân cao su và ngư dân đang hưởng trợ cấp hằng tháng sau khi đã hết thời hạn hưởng trợ cấp mất sức lao động.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 6,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ:' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Nghị định mới nhất hướng dẫn Luật Bảo hiểm xã hội 2024 đã được ban hành và quy định chính sách chuyển tiếp cho người đang hưởng trợ cấp mất sức lao động, trợ cấp tai nạn lao động, bệnh nghề nghiệp, trợ cấp tuất hằng tháng, trợ cấp hằng tháng đối với cán bộ xã, phường, thị trấn đã nghỉ việc, trợ cấp hằng tháng đối với công nhân cao su và ngư dân đang hưởng trợ cấp hằng tháng sau khi đã hết thời hạn hưởng trợ cấp mất sức lao động.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nNghị định mới nhất hướng dẫn Luật Bảo hiểm xã hội 2024 đã được ban hành và quy định chính sách chuyển tiếp cho người đang hưởng trợ cấp mất sức lao động, trợ cấp tai nạn lao động, bệnh nghề nghiệp, trợ cấp tuất hằng tháng, trợ cấp hằng tháng đối với cán bộ xã, phường, thị trấn đã nghỉ việc, trợ cấp hằng tháng đối với công nhân cao su và ngư dân đang hưởng trợ cấp hằng tháng sau khi đã hết thời hạn hưởng trợ cấp mất sức lao động.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 15 - Trang 88 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 1 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 2 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 3 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 4 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 141. Quy định chuyển tiếp, Khoản 5 - Trang 87 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Người đang hưởng trợ cấp mất sức lao động, trợ cấp tai nạn lao động, bệnh nghề nghiệp, trợ cấp tuất hằng tháng, trợ cấp hằng tháng đối với cán bộ xã, phường, thị trấn đã nghỉ việc, trợ cấp hằng tháng đối với công nhân cao su và ngư dân đang hưởng trợ cấp hằng tháng sau khi đã hết thời hạn hưởng trợ cấp mất sức lao động được điều chỉnh mức hưởng theo quy định của Chính phủ.\n+ LƯU Ý/NGOẠI LỆ:\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ:' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G05",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Luật Bảo hiểm xã hội 2024 số 41/2024/QH15 chính thức có hiệu lực thi hành từ ngày nào?",
+      "expected_intent": "social_insurance",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Trả lời chính xác ngày 01/07/2025 theo đúng dữ liệu metadata có trong KB.",
+      "execution_time_sec": 21.98,
+      "intent_agent_result": {
+        "domain": "social_insurance",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "bảo hiểm xã hội"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Luật Bảo hiểm xã hội (Từ khóa: bảo hiểm xã hội)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 12,
+        "unique_articles": [
+          "Điều 140. Hiệu lực thi hành",
+          "Điều 219. Sửa đổi, bổ sung một số điều của các luật có liên quan đến",
+          "Quy định mở đầu"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Luật Bảo hiểm xã hội 2024 (số 41/2024/QH15) chính thức có hiệu lực thi hành từ ngày 01/07/2025.",
+        "missing_facts": [],
+        "temporal_notes": [
+          "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+        ]
+      },
+      "validation_agent_result": {
+        "status": "WARNING",
+        "verified_citations_count": 2,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": [
+          "Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ:' không tìm thấy trực tiếp trong văn bản nguồn."
+        ]
+      },
+      "final_response": {
+        "conclusion": "Luật Bảo hiểm xã hội 2024 (số 41/2024/QH15) chính thức có hiệu lực thi hành từ ngày 01/07/2025.",
+        "domain_tag": "social_insurance",
+        "is_answerable": true,
+        "confidence_level": "TRUNG_BÌNH",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nLuật Bảo hiểm xã hội 2024 (số 41/2024/QH15) chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 140. Hiệu lực thi hành, Khoản 1 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n- **Luật Bảo hiểm xã hội (Số 41/2024/QH15)**: Điều 140. Hiệu lực thi hành, Khoản 2 - Trang 86 (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Hiệu lực thi hành từ ngày 01/07/2025\n+ LƯU Ý/NGOẠI LỆ:\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Lưu ý về hiệu lực: Luật Bảo hiểm xã hội số 41/2024/QH15 được Quốc hội khóa XV thông qua ngày 29/06/2024 và chính thức có hiệu lực thi hành từ ngày 01/07/2025.\n- Cảnh báo kiểm định: Điều kiện áp dụng 'LƯU Ý/NGOẠI LỆ:' không tìm thấy trực tiếp trong văn bản nguồn."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "OOS_G06",
+      "group": "Nhóm G - Văn bản, điều luật và thời điểm pháp luật",
+      "question": "Quy định về thời giờ làm việc của Bộ luật Lao động 1994 có còn áp dụng không?",
+      "expected_intent": "labor_law",
+      "expected_is_in_scope": true,
+      "expected_behavior": "Khẳng định BLLĐ 1994 đã hết hiệu lực, hiện áp dụng theo BLLĐ 2019 (18/VBHN-VPQH).",
+      "execution_time_sec": 27.92,
+      "intent_agent_result": {
+        "domain": "labor_law",
+        "is_in_scope": true,
+        "matched_concepts": [],
+        "extracted_keywords": [
+          "thời giờ làm việc"
+        ],
+        "explanation": "Câu hỏi thuộc lĩnh vực Bộ luật Lao động (Từ khóa: thời giờ làm việc)"
+      },
+      "retrieval_agent_result": {
+        "total_retrieved": 19,
+        "unique_articles": [
+          "Điều 212. Nội dung quản lý nhà nước về lao động",
+          "Điều 146. Thời giờ làm việc của người chưa thành niên",
+          "Điều 107. Làm thêm giờ",
+          "Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không"
+        ],
+        "primary_chunks_count": 4
+      },
+      "legal_analysis_result": {
+        "status": "success",
+        "is_sufficient": true,
+        "conclusion": "Theo quy định của Bộ luật Lao động 1994, thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần. Tuy nhiên, theo quy định mới của Bộ luật Lao động 2021 (18/VBHN-VPQH), thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần, nhưng không được làm thêm giờ, làm việc vào ban đêm. Do đó, quy định về thời giờ làm việc của Bộ luật Lao động 1994 không còn áp dụng.",
+        "missing_facts": [],
+        "temporal_notes": []
+      },
+      "validation_agent_result": {
+        "status": "PASSED",
+        "verified_citations_count": 12,
+        "hallucinated_citations": [],
+        "unsupported_facts": [],
+        "warning_messages": []
+      },
+      "final_response": {
+        "conclusion": "Theo quy định của Bộ luật Lao động 1994, thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần. Tuy nhiên, theo quy định mới của Bộ luật Lao động 2021 (18/VBHN-VPQH), thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần, nhưng không được làm thêm giờ, làm việc vào ban đêm. Do đó, quy định về thời giờ làm việc của Bộ luật Lao động 1994 không còn áp dụng.",
+        "domain_tag": "labor_law",
+        "is_answerable": true,
+        "confidence_level": "CAO",
+        "formatted_markdown": "### 🏛️ KẾT QUẢ TƯ VẤN PHÁP LUẬT\n\n#### 1. KẾT LUẬN\nTheo quy định của Bộ luật Lao động 1994, thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần. Tuy nhiên, theo quy định mới của Bộ luật Lao động 2021 (18/VBHN-VPQH), thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần, nhưng không được làm thêm giờ, làm việc vào ban đêm. Do đó, quy định về thời giờ làm việc của Bộ luật Lao động 1994 không còn áp dụng.\n\n#### 2. CĂN CỨ PHÁP LÝ\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 146. Thời giờ làm việc của người chưa thành niên, Khoản 1 - Trang 58 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 107. Làm thêm giờ, Khoản 2 - Trang 43 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 2 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 146. Thời giờ làm việc của người chưa thành niên, Khoản 2 - Trang 58 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 107. Làm thêm giờ, Khoản 1 - Trang 43 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 107. Làm thêm giờ, Khoản 3 - Trang 44 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 107. Làm thêm giờ, Khoản 4 - Trang 44 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 107. Làm thêm giờ, Khoản 5 - Trang 44 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 1 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 3 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 4 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n- **Bộ luật Lao động (Số 18/VBHN-VPQH)**: Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không, Khoản 5 - Trang 61 (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)\n\n#### 3. GIẢI THÍCH CHI TIẾT\n**Điều kiện và mức áp dụng cụ thể:**\n+ Không áp dụng cho người chưa đủ 15 tuổi.\n\n#### 4. LƯU Ý VÀ ÁP DỤNG THỰC TIỄN\n- Quy định ngoại lệ: Không áp dụng cho người chưa đủ 15 tuổi.\n- Lưu ý về hiệu lực: Áp dụng theo Văn bản hợp nhất số 18/VBHN-VPQH (Xác thực ngày 12/02/2026; Bộ luật Lao động gốc số 45/2019/QH14 có hiệu lực từ ngày 01/01/2021)."
+      },
+      "audit_verdict": {
+        "status": "PASS",
+        "risk_severity": "NONE",
+        "reasons": []
+      }
+    }
+  ]
+}

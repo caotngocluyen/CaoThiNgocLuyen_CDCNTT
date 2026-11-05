@@ -1,0 +1,105 @@
+{
+  "audit_timestamp": "2026-11-05 12:59:42",
+  "total_scenarios": 10,
+  "passed_scenarios": 10,
+  "scenarios": [
+    {
+      "scenario": "MT01",
+      "name": "Lương làm thêm -> Thêm mức lương 30 triệu",
+      "passed": true,
+      "q1": "Lương làm thêm cuối tuần là bao nhiêu?",
+      "q2": "Lương của tôi là 30 triệu thì sao?",
+      "rewritten": "Cách xác định tiền lương làm thêm vào ngày nghỉ hằng tuần theo Điều 98, Điều 107. Làm thêm giờ Bộ luật Lao động 2019, Bộ luật Lao động, trong trường hợp người lao động có mức lương 30 triệu đồng.",
+      "active_topic": "tien_luong_lam_them_gio",
+      "facts": {
+        "day_type": "ngày nghỉ hằng tuần",
+        "salary": "30 triệu đồng",
+        "actor": "người lao động"
+      }
+    },
+    {
+      "scenario": "MT02",
+      "name": "Nghỉ phép năm -> Thêm thâm niên 5 năm",
+      "passed": true,
+      "q1": "Người lao động được nghỉ phép năm bao nhiêu ngày?",
+      "q2": "Nếu làm việc 5 năm thì sao?",
+      "rewritten": "Thời gian nghỉ hằng năm (nghỉ phép năm) của người lao động làm việc đủ 5 năm theo Điều 113, Điều 114, Điều 113. Nghỉ hằng năm Bộ luật Lao động 2019, Bộ luật Lao động.",
+      "active_topic": "nghi_phep_hang_nam",
+      "facts": {
+        "actor": "người lao động",
+        "seniority": "5 năm"
+      }
+    },
+    {
+      "scenario": "MT03",
+      "name": "Điều kiện thai sản -> Thời gian đóng BHXH",
+      "passed": true,
+      "q1": "Điều kiện hưởng chế độ thai sản là gì?",
+      "q2": "Vậy cần đóng bảo hiểm bao lâu?",
+      "rewritten": "Thời gian đóng bảo hiểm xã hội để đủ điều kiện hưởng chế độ thai sản theo quy định của Luật Bảo hiểm xã hội 2024, Luật Bảo hiểm xã hội.",
+      "active_topic": "che_do_thai_san"
+    },
+    {
+      "scenario": "MT04",
+      "name": "Đơn phương chấm dứt HĐLĐ -> Thời hạn báo trước",
+      "passed": true,
+      "q1": "Người sử dụng lao động có được đơn phương chấm dứt hợp đồng không?",
+      "q2": "Còn phải báo trước bao nhiêu ngày?",
+      "rewritten": "Thời hạn báo trước khi người sử dụng lao động đơn phương chấm dứt hợp đồng lao động theo Điều 35, Điều 36, Điều 46, Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử Bộ luật Lao động 2019, Bộ luật Lao động.",
+      "active_topic": "cham_dut_hop_dong_lao_dong"
+    },
+    {
+      "scenario": "MT05",
+      "name": "Chuyển chủ đề từ Làm thêm sang Thai sản",
+      "passed": true,
+      "q1": "Lương làm thêm cuối tuần là bao nhiêu?",
+      "q2": "Điều kiện hưởng chế độ thai sản là gì?",
+      "new_topic": "che_do_thai_san",
+      "facts_cleared": true
+    },
+    {
+      "scenario": "MT06",
+      "name": "Bổ sung dữ kiện và đính chính (20tr -> 25tr)",
+      "passed": true,
+      "q2_salary": "20 triệu đồng",
+      "q3_corrected_salary": "25 triệu đồng",
+      "rewritten_turn3": "Cách xác định tiền lương làm thêm vào ngày nghỉ hằng tuần theo Điều 98, Điều 107. Làm thêm giờ, Điều 108. Làm thêm giờ trong trường hợp đặc biệt Bộ luật Lao động 2019, Bộ luật Lao động, trong trường hợp người lao động có mức lương 25 triệu đồng."
+    },
+    {
+      "scenario": "MT07",
+      "name": "Cô lập dữ liệu giữa 2 session đồng thời",
+      "passed": true,
+      "session_A_topic": "nghi_phep_hang_nam",
+      "session_A_facts": {
+        "actor": "người lao động",
+        "seniority": "5 năm"
+      },
+      "session_B_topic": "che_do_thai_san",
+      "session_B_facts": {}
+    },
+    {
+      "scenario": "MT08",
+      "name": "Câu hỏi độc lập không bị viết lại",
+      "passed": true,
+      "q1": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+      "q2": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+      "is_rewritten": false
+    },
+    {
+      "scenario": "MT09",
+      "name": "Xử lý câu hỏi mơ hồ yêu cầu làm rõ",
+      "passed": true,
+      "q1": "Lương làm thêm giờ ngày thường và ngày nghỉ hàng tuần tính như thế nào?",
+      "q2": "còn cái kia thì sao?",
+      "clarification_requested": true
+    },
+    {
+      "scenario": "MT10",
+      "name": "Hội thoại dài nhiều lượt (7 turns, sliding window 5)",
+      "passed": true,
+      "total_turns": 7,
+      "retained_history_turns": 5,
+      "max_turns_limit": 5
+    }
+  ]
+}

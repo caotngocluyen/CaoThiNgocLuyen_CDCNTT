@@ -1,0 +1,310 @@
+[
+  {
+    "test_id": "TC1_LABOR",
+    "category": "1. Labor Law",
+    "query": "Thời gian thử việc tối đa đối với người làm công việc có chức danh nghề nghiệp cần trình độ đại học trở lên là bao nhiêu ngày?",
+    "expected_domain": "labor_law",
+    "actual_domain": "labor_law",
+    "validation_status": "PASSED",
+    "warnings": [],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0024383068084716797,
+      "retrieval_time": 0.17732810974121094,
+      "analysis_time": 17.437331438064575,
+      "validation_time": 0.0024123191833496094,
+      "response_time": 0.0006067752838134766,
+      "total_time": 17.621538400650024
+    },
+    "resources": {
+      "process_ram_before_mb": 1917.1,
+      "process_ram_after_mb": 2359.9,
+      "process_ram_delta_mb": 442.7,
+      "system_ram_used_gb": 13.46,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 85.5
+    },
+    "answer_summary": "Thời gian thử việc tối đa đối với người làm công việc có chức danh nghề nghiệp cần trình độ đại học trở lên là 60 ngày.",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 25. Thời gian thử việc",
+        "clause": "Khoản 2",
+        "page": 12
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 25. Thời gian thử việc",
+        "clause": "Khoản 1",
+        "page": 11
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 25. Thời gian thử việc",
+        "clause": "Khoản 3",
+        "page": 12
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 25. Thời gian thử việc",
+        "clause": "Khoản 4",
+        "page": 12
+      }
+    ]
+  },
+  {
+    "test_id": "TC2_BHXH",
+    "category": "2. Social Insurance",
+    "query": "Mức hưởng chế độ ốm đau thông thường của người lao động bằng bao nhiêu phần trăm tiền lương?",
+    "expected_domain": "social_insurance",
+    "actual_domain": "mixed",
+    "validation_status": "WARNING",
+    "warnings": [
+      "Tỷ lệ '75%' có xuất hiện trong ngữ cảnh nhưng KHÔNG thuộc Điều/Khoản được trích dẫn làm căn cứ!"
+    ],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0,
+      "retrieval_time": 0.06492757797241211,
+      "analysis_time": 21.41216254234314,
+      "validation_time": 0.00177001953125,
+      "response_time": 0.0006487369537353516,
+      "total_time": 21.480669498443604
+    },
+    "resources": {
+      "process_ram_before_mb": 2359.9,
+      "process_ram_after_mb": 2365.4,
+      "process_ram_delta_mb": 5.6,
+      "system_ram_used_gb": 13.31,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 84.6
+    },
+    "answer_summary": "Mức hưởng chế độ ốm đau thông thường của người lao động bằng 75% tiền lương làm căn cứ đóng bảo hiểm xã hội quy định tại khoản 1 Điều 43 và Điều 44 của Bộ luật Lao động (18/VBHN-VPQH).",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 90. Tiền lương",
+        "clause": "Khoản 1",
+        "page": 38
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 90. Tiền lương",
+        "clause": "Khoản 2",
+        "page": 38
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 90. Tiền lương",
+        "clause": "Khoản 3",
+        "page": 38
+      }
+    ]
+  },
+  {
+    "test_id": "TC3_MULTI",
+    "category": "3. Multi-intent / Multi-point",
+    "query": "Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong những trường hợp nào và phải báo trước bao nhiêu ngày?",
+    "expected_domain": "labor_law",
+    "actual_domain": "labor_law",
+    "validation_status": "PASSED",
+    "warnings": [],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0006222724914550781,
+      "retrieval_time": 17.844008207321167,
+      "analysis_time": 47.34486746788025,
+      "validation_time": 0.0032002925872802734,
+      "response_time": 0.0,
+      "total_time": 65.19304776191711
+    },
+    "resources": {
+      "process_ram_before_mb": 2365.4,
+      "process_ram_after_mb": 2375.0,
+      "process_ram_delta_mb": 9.5,
+      "system_ram_used_gb": 13.36,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 84.9
+    },
+    "answer_summary": "Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong những trường hợp sau:",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử",
+        "clause": "Khoản 3",
+        "page": 17
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử",
+        "clause": "Khoản 1",
+        "page": 16
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử",
+        "clause": "Khoản 2",
+        "page": 17
+      }
+    ]
+  },
+  {
+    "test_id": "TC4_VAGUE",
+    "category": "4. Vague / Underspecified",
+    "query": "Nghỉ việc được hưởng tiền gì?",
+    "expected_domain": "labor_law",
+    "actual_domain": "labor_law",
+    "validation_status": "PASSED",
+    "warnings": [],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0005807876586914062,
+      "retrieval_time": 0.048619985580444336,
+      "analysis_time": 16.311488389968872,
+      "validation_time": 0.0022504329681396484,
+      "response_time": 0.0,
+      "total_time": 16.362939596176147
+    },
+    "resources": {
+      "process_ram_before_mb": 2375.0,
+      "process_ram_after_mb": 2375.5,
+      "process_ram_delta_mb": 0.6,
+      "system_ram_used_gb": 13.35,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 84.9
+    },
+    "answer_summary": "Nghỉ việc được hưởng tiền lương.",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 101. Tạm ứng tiền lương",
+        "clause": "Khoản 3",
+        "page": 42
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 101. Tạm ứng tiền lương",
+        "clause": "Khoản 1",
+        "page": 42
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 101. Tạm ứng tiền lương",
+        "clause": "Khoản 2",
+        "page": 42
+      }
+    ]
+  },
+  {
+    "test_id": "TC5_OOS",
+    "category": "5. Out of Scope",
+    "query": "Thời hạn chuyển nhượng quyền sử dụng đất nông nghiệp theo Luật Đất đai là bao nhiêu năm?",
+    "expected_domain": "out_of_scope",
+    "actual_domain": "out_of_scope",
+    "validation_status": "SKIPPED/OOS",
+    "warnings": [],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0,
+      "retrieval_time": 0.0,
+      "analysis_time": 0.0,
+      "validation_time": 0.0,
+      "response_time": 0.0,
+      "total_time": 0.0
+    },
+    "resources": {
+      "process_ram_before_mb": 2375.5,
+      "process_ram_after_mb": 2375.5,
+      "process_ram_delta_mb": 0.0,
+      "system_ram_used_gb": 13.35,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 84.9
+    },
+    "answer_summary": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+    "legal_basis": []
+  },
+  {
+    "test_id": "TC6_MISSING",
+    "category": "6. Missing in KB",
+    "query": "Theo Luật Hàng không dân dụng Việt Nam, hành khách bị hủy chuyến bay được bồi thường tối đa bao nhiêu tiền?",
+    "expected_domain": "out_of_scope",
+    "actual_domain": "labor_law",
+    "validation_status": "FAILED",
+    "warnings": [],
+    "errors": [
+      "Tỷ lệ '10%' xuất hiện trong câu trả lời nhưng HOÀN TOÀN KHÔNG có trong bất kỳ văn bản nguồn nào!"
+    ],
+    "timing_ms": {
+      "intent_time": 0.0005629062652587891,
+      "retrieval_time": 16.293102264404297,
+      "analysis_time": 16.80757427215576,
+      "validation_time": 0.0022656917572021484,
+      "response_time": 0.0005743503570556641,
+      "total_time": 33.10464382171631
+    },
+    "resources": {
+      "process_ram_before_mb": 2375.5,
+      "process_ram_after_mb": 2380.3,
+      "process_ram_delta_mb": 4.8,
+      "system_ram_used_gb": 13.38,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 85.1
+    },
+    "answer_summary": "Theo Luật Hàng không dân dụng Việt Nam, hành khách bị hủy chuyến bay được bồi thường tối đa là 10% giá vé.",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 129. Bồi thường thiệt hại",
+        "clause": "Khoản 1",
+        "page": 52
+      },
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 129. Bồi thường thiệt hại",
+        "clause": "Khoản 2",
+        "page": 52
+      }
+    ]
+  },
+  {
+    "test_id": "TC7_CONFUSING",
+    "category": "7. Adversarial / Confusing Keywords",
+    "query": "Tôi muốn biết hợp đồng thử việc bảo hiểm xã hội tính bao nhiêu phần trăm lương làm thêm giờ?",
+    "expected_domain": "mixed",
+    "actual_domain": "mixed",
+    "validation_status": "PASSED",
+    "warnings": [],
+    "errors": [],
+    "timing_ms": {
+      "intent_time": 0.0005173683166503906,
+      "retrieval_time": 0.053752899169921875,
+      "analysis_time": 19.695486307144165,
+      "validation_time": 0.0021910667419433594,
+      "response_time": 0.0,
+      "total_time": 19.753084659576416
+    },
+    "resources": {
+      "process_ram_before_mb": 2380.3,
+      "process_ram_after_mb": 2383.2,
+      "process_ram_delta_mb": 2.9,
+      "system_ram_used_gb": 13.39,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 85.1
+    },
+    "answer_summary": "Không có thông tin cụ thể về hợp đồng thử việc bảo hiểm xã hội tính bao nhiêu phần trăm lương làm thêm giờ trong văn bản được cung cấp.",
+    "legal_basis": [
+      {
+        "document": "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01)",
+        "article": "Điều 25. Thời gian thử việc",
+        "clause": "Khoản 1",
+        "page": 11
+      },
+      {
+        "document": "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01)",
+        "article": "Điều 13. Trách nhiệm của người sử dụng lao động",
+        "clause": "Khoản 3",
+        "page": 12
+      }
+    ]
+  }
+]

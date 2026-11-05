@@ -1,0 +1,113 @@
+[
+  {
+    "test_id": "T1_75pct_at_Khoan2",
+    "name": "75% tại Khoản 2 Điều 45 (Ốm đau thông thường)",
+    "actual_status": "PASSED",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 2 (Trang 35)",
+      "Xác thực mức/tỷ lệ '75%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Xác thực điều kiện áp dụng 'Nghỉ việc theo khoản 1 Điều 43 và Điều 44' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 100.0% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T2_75pct_at_Khoan1",
+    "name": "75% tại Khoản 1 Điều 45 (Sai Khoản - Khoản 1 chỉ quy định căn cứ tiền lương)",
+    "actual_status": "WARNING",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [
+      "Tỷ lệ '75%' có trong Điều luật liên quan nhưng nằm ở Khoản khác, chưa định vị chính xác Khoản trích dẫn"
+    ],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 1 (Trang 35)",
+      "Xác minh tỷ lệ '75%' có trong cùng Điều luật tham chiếu",
+      "Xác thực điều kiện áp dụng 'Theo tháng' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 92.9% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T3_65pct_at_Khoan3_correct_cond",
+    "name": "65% tại Khoản 3 Điều 45 (Đúng điều kiện: từ đủ 30 năm trở lên)",
+    "actual_status": "PASSED",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 3 (Trang 35)",
+      "Xác thực mức/tỷ lệ '65%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Xác thực điều kiện áp dụng 'Đã đóng bảo hiểm xã hội bắt buộc từ đủ 30 năm trở lên' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 78.3% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T4_55pct_at_Khoan3_correct_cond",
+    "name": "55% tại Khoản 3 Điều 45 (Đúng điều kiện: từ đủ 15 năm đến dưới 30 năm)",
+    "actual_status": "PASSED",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 3 (Trang 35)",
+      "Xác thực mức/tỷ lệ '55%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Xác thực điều kiện áp dụng 'Đã đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm đến dưới 30 năm' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 81.0% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T5_50pct_at_Khoan3_correct_cond",
+    "name": "50% tại Khoản 3 Điều 45 (Đúng điều kiện: dưới 15 năm)",
+    "actual_status": "PASSED",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 3 (Trang 35)",
+      "Xác thực mức/tỷ lệ '50%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Xác thực điều kiện áp dụng 'Đã đóng bảo hiểm xã hội bắt buộc dưới 15 năm' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 80.0% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T6_65pct_at_Khoan2",
+    "name": "65% tại Khoản 2 Điều 45 (Sai Khoản - Khoản 2 chỉ quy định 7%, còn 65% ở Khoản 3)",
+    "actual_status": "WARNING",
+    "is_valid": true,
+    "test_passed": true,
+    "warnings": [
+      "Tỷ lệ '65%' có trong Điều luật liên quan nhưng nằm ở Khoản khác, chưa định vị chính xác Khoản trích dẫn",
+      "Điều kiện áp dụng 'Từ đủ 30 năm' có trong Điều luật nhưng nằm ở Khoản khác."
+    ],
+    "errors": [],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 2 (Trang 35)",
+      "Xác minh tỷ lệ '65%' có trong cùng Điều luật tham chiếu",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 100.0% từ khóa cốt lõi"
+    ]
+  },
+  {
+    "test_id": "T7_65pct_at_Khoan3_wrong_cond",
+    "name": "65% tại Khoản 3 Điều 45 nhưng SAI điều kiện (gán với 'dưới 15 năm')",
+    "actual_status": "FAILED",
+    "is_valid": false,
+    "test_passed": true,
+    "warnings": [],
+    "errors": [
+      "Xung đột điều kiện - tỷ lệ: Mức '65%' bị gán sai điều kiện 'dưới 15 năm' (quy định chuẩn yêu cầu '30 năm')"
+    ],
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45. Trợ cấp ốm đau | Khoản 3 (Trang 35)",
+      "Xác thực mức/tỷ lệ '65%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Xác thực điều kiện áp dụng 'Đóng bảo hiểm xã hội dưới 15 năm' phù hợp với Khoản trích dẫn căn cứ.",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 100.0% từ khóa cốt lõi"
+    ]
+  }
+]

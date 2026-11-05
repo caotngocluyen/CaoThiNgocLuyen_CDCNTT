@@ -1,0 +1,28 @@
+{
+  "labor_code": {
+    "document_name": "Bộ luật Lao động",
+    "document_number": "18/VBHN-VPQH",
+    "total_pages": 91,
+    "total_chapters": 17,
+    "total_articles": 220,
+    "total_clauses": 652,
+    "total_points": 284,
+    "total_chunks": 716,
+    "empty_chunks": 0,
+    "missing_metadata_chunks": 0,
+    "unmapped_pages": []
+  },
+  "social_insurance": {
+    "document_name": "Luật Bảo hiểm xã hội",
+    "document_number": "41/2024/QH15",
+    "total_pages": 88,
+    "total_chapters": 11,
+    "total_articles": 141,
+    "total_clauses": 543,
+    "total_points": 359,
+    "total_chunks": 580,
+    "empty_chunks": 0,
+    "missing_metadata_chunks": 0,
+    "unmapped_pages": []
+  }
+}

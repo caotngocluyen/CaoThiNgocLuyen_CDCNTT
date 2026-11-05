@@ -1,0 +1,183 @@
+[
+  {
+    "id": "FTL_01",
+    "category": "Nhiều điều kiện & Ngoại lệ (Điều 35 Khoản 2)",
+    "question": "Công ty nợ lương 2 tháng và tự ý chuyển tôi sang làm công việc khác thỏa thuận, tôi có được nghỉ việc ngay không?",
+    "latency_sec": 35.43,
+    "inference_time_sec": 35.25,
+    "fact_extraction_ok": true,
+    "legal_issues_ok": true,
+    "rule_matching_ok": false,
+    "exception_handling_ok": true,
+    "missing_facts_ok": true,
+    "temporal_ok": true,
+    "validation_status": "PASSED",
+    "no_hallucination": true,
+    "conclusion": "Theo dữ kiện, công ty đã tự ý chuyển tôi sang làm công việc khác thỏa thuận, và tôi đã được hưởng nguyên lương và đã thông báo với người sử dụng lao động theo các điều kiện được quy định tại Điều 115 của Bộ luật Lao động (18/VBHN-VPQH). Do đó, tôi có được nghỉ việc riêng không hưởng lương.",
+    "extracted_facts": [
+      "Chủ thể: người sử dụng lao động",
+      "Sự kiện: đơn phương chấm dứt",
+      "Dữ kiện số: 2 tháng"
+    ],
+    "legal_issues": [
+      "Điều kiện được hưởng / Quyền thực hiện hành vi",
+      "Mức hưởng / Tỷ lệ tiền lương hoặc trợ cấp"
+    ],
+    "missing_facts": [
+      "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+    ],
+    "temporal_notes": [],
+    "verified_citations": [
+      "18/VBHN-VPQH Điều 115. Nghỉ việc riêng, nghỉ không hưởng lương Khoản 3",
+      "18/VBHN-VPQH Điều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao Khoản 3",
+      "18/VBHN-VPQH Điều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao Khoản 2",
+      "18/VBHN-VPQH Điều 115. Nghỉ việc riêng, nghỉ không hưởng lương Khoản 1",
+      "18/VBHN-VPQH Điều 115. Nghỉ việc riêng, nghỉ không hưởng lương Khoản 2",
+      "18/VBHN-VPQH Điều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao Khoản 1",
+      "18/VBHN-VPQH Điều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao Khoản 4"
+    ]
+  },
+  {
+    "id": "FTL_02",
+    "category": "Thiếu dữ kiện trọng yếu (Thử việc và BHXH)",
+    "question": "Tôi đang trong thời gian thử việc thì công ty có phải đóng bảo hiểm xã hội bắt buộc không?",
+    "latency_sec": 22.82,
+    "inference_time_sec": 22.77,
+    "fact_extraction_ok": true,
+    "legal_issues_ok": true,
+    "rule_matching_ok": true,
+    "exception_handling_ok": true,
+    "missing_facts_ok": true,
+    "temporal_ok": true,
+    "validation_status": "WARNING",
+    "no_hallucination": true,
+    "conclusion": "Theo quy định của Bộ luật Lao động (18/VBHN-VPQH), thời gian thử việc không phải đóng bảo hiểm xã hội bắt buộc. Điều 27, Khoản 1 của Bộ luật Lao động (18/VBHN-VPQH) chỉ quy định thời gian thử việc phải thông báo kết quả cho người lao động, không đề cập đến việc đóng bảo hiểm xã hội bắt buộc.",
+    "extracted_facts": [
+      "Chủ thể: người sử dụng lao động, cơ quan BHXH",
+      "Sự kiện: thử việc"
+    ],
+    "legal_issues": [
+      "Thời hạn áp dụng / Thời hạn báo trước / Thời gian hưởng",
+      "Trách nhiệm và nghĩa vụ pháp lý của các bên"
+    ],
+    "missing_facts": [
+      "Hình thức giao kết (thỏa thuận thử việc trong HĐLĐ hay lập Hợp đồng thử việc riêng)"
+    ],
+    "temporal_notes": [
+      "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+    ],
+    "verified_citations": [
+      "18/VBHN-VPQH Điều 27. Kết thúc thời gian thử việc Khoản 2",
+      "18/VBHN-VPQH Điều 27. Kết thúc thời gian thử việc Khoản 1"
+    ]
+  },
+  {
+    "id": "FTL_03",
+    "category": "Phân tầng tỷ lệ & Điều kiện (Điều 45 Luật BHXH 2024)",
+    "question": "Tôi bị ốm thông thường nghỉ việc 5 ngày thì mức hưởng trợ cấp là bao nhiêu phần trăm lương? Có được hưởng 65% không?",
+    "latency_sec": 68.86,
+    "inference_time_sec": 32.03,
+    "fact_extraction_ok": true,
+    "legal_issues_ok": true,
+    "rule_matching_ok": false,
+    "exception_handling_ok": false,
+    "missing_facts_ok": true,
+    "temporal_ok": true,
+    "validation_status": "WARNING",
+    "no_hallucination": true,
+    "conclusion": "Nếu bạn bị ốm thông thường và nghỉ việc 5 ngày, mức hưởng trợ cấp ốm đau sẽ là 300% lương. Điều này dựa trên Khoản 2 Điều 48 của Luật Bảo hiểm xã hội (2024), quy định mức hưởng trợ cấp ốm đau một ngày là 300% lương.",
+    "extracted_facts": [
+      "Chủ thể: người lao động (mặc định)",
+      "Sự kiện: đơn phương chấm dứt",
+      "Dữ kiện số: 5 ngày, 65"
+    ],
+    "legal_issues": [
+      "Điều kiện được hưởng / Quyền thực hiện hành vi",
+      "Mức hưởng / Tỷ lệ tiền lương hoặc trợ cấp"
+    ],
+    "missing_facts": [
+      "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+    ],
+    "temporal_notes": [
+      "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+    ],
+    "verified_citations": [
+      "41/2024/QH15 Điều 48. Giải quyết hưởng trợ cấp ốm đau Khoản 2",
+      "41/2024/QH15 Điều 48. Giải quyết hưởng trợ cấp ốm đau Khoản 1",
+      "41/2024/QH15 Điều 48. Giải quyết hưởng trợ cấp ốm đau Khoản 3"
+    ]
+  },
+  {
+    "id": "FTL_04",
+    "category": "Thời điểm hiệu lực pháp luật (Luật BHXH 2024)",
+    "question": "Từ tháng 8/2025 tôi sinh con thì thời gian nghỉ thai sản là bao nhiêu tháng và tính theo quy định nào?",
+    "latency_sec": 26.56,
+    "inference_time_sec": 26.49,
+    "fact_extraction_ok": true,
+    "legal_issues_ok": true,
+    "rule_matching_ok": false,
+    "exception_handling_ok": true,
+    "missing_facts_ok": true,
+    "temporal_ok": true,
+    "validation_status": "PASSED",
+    "no_hallucination": true,
+    "conclusion": "Theo dữ kiện, từ tháng 8/2025 khi sinh con, thời gian nghỉ thai sản là 6 tháng.",
+    "extracted_facts": [
+      "Chủ thể: lao động nữ",
+      "Sự kiện: sinh con / thai sản",
+      "Dữ kiện số: 8, 2025"
+    ],
+    "legal_issues": [
+      "Mức hưởng / Tỷ lệ tiền lương hoặc trợ cấp",
+      "Thời hạn áp dụng / Thời hạn báo trước / Thời gian hưởng"
+    ],
+    "missing_facts": [],
+    "temporal_notes": [
+      "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+    ],
+    "verified_citations": [
+      "41/2024/QH15 Điều 55. Chế độ thai sản của lao động nữ nhờ mang thai hộ Khoản 1",
+      "41/2024/QH15 Điều 55. Chế độ thai sản của lao động nữ nhờ mang thai hộ Khoản 2"
+    ]
+  },
+  {
+    "id": "FTL_05",
+    "category": "Ngoài vùng phủ Knowledge Base (Luật Việc làm)",
+    "question": "Tôi nghỉ việc thì bảo hiểm thất nghiệp chi trả bao nhiêu tháng lương?",
+    "latency_sec": 38.67,
+    "inference_time_sec": 38.63,
+    "fact_extraction_ok": true,
+    "legal_issues_ok": true,
+    "rule_matching_ok": true,
+    "exception_handling_ok": true,
+    "missing_facts_ok": true,
+    "temporal_ok": true,
+    "validation_status": "WARNING",
+    "no_hallucination": true,
+    "conclusion": "Trong trường hợp nghỉ việc hưởng chế độ bảo hiểm xã hội, người sử dụng lao động không phải trả lương cho người lao động, trừ trường hợp hai bên có thỏa thuận khác. Tuy nhiên, đối với người lao động không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người sử dụng lao động có trách nhiệm chi trả thêm cùng lúc với kỳ trả lương một khoản tiền cho người lao động tương đương với mức người sử dụng lao động đóng bảo hiểm xã hội bắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp cho người lao động theo quy định của pháp luật về bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp.",
+    "extracted_facts": [
+      "Chủ thể: người lao động (mặc định)",
+      "Sự kiện: đơn phương chấm dứt, trợ cấp thôi việc / thất nghiệp"
+    ],
+    "legal_issues": [
+      "Mức hưởng / Tỷ lệ tiền lương hoặc trợ cấp"
+    ],
+    "missing_facts": [
+      "Loại hợp đồng lao động đang thực hiện (xác định thời hạn hay không xác định thời hạn)"
+    ],
+    "temporal_notes": [
+      "Luật BHXH 2024 (số 41/2024/QH15) có hiệu lực thi hành từ ngày 01/07/2025."
+    ],
+    "verified_citations": [
+      "18/VBHN-VPQH Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp Khoản 2",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 5",
+      "18/VBHN-VPQH Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp Khoản 3",
+      "18/VBHN-VPQH Điều 168. Tham gia bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp Khoản 1",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 1",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 2",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 3",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 4",
+      "41/2024/QH15 Điều 17. Quyền hạn của cơ quan bảo hiểm xã hội Khoản 6"
+    ]
+  }
+]

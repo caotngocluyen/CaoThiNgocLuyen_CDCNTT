@@ -1,0 +1,152 @@
+{
+  "metrics": {
+    "BM25": {
+      "Hit@1": 50.0,
+      "Hit@3": 81.25,
+      "Hit@5": 93.75,
+      "MRR@5": 0.6635416666666667
+    },
+    "Dense": {
+      "Hit@1": 37.5,
+      "Hit@3": 37.5,
+      "Hit@5": 56.25,
+      "MRR@5": 0.415625
+    },
+    "Hybrid": {
+      "Hit@1": 50.0,
+      "Hit@3": 68.75,
+      "Hit@5": 87.5,
+      "MRR@5": 0.6239583333333334
+    }
+  },
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "Hợp đồng lao động có những loại nào?",
+      "ground_truth": "Điều 20.",
+      "bm25_rank": 3,
+      "dense_rank": "-",
+      "hybrid_rank": 5
+    },
+    {
+      "id": "Q2",
+      "query": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+      "ground_truth": "Điều 25.",
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q3",
+      "query": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường?",
+      "ground_truth": "Điều 113.",
+      "bm25_rank": 2,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q4",
+      "query": "Thời giờ làm việc bình thường không quá bao nhiêu giờ trong một ngày và một tuần?",
+      "ground_truth": "Điều 105.",
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q5",
+      "query": "Làm thêm giờ vào ngày nghỉ hàng tuần được trả lương tính như thế nào?",
+      "ground_truth": "Điều 98.",
+      "bm25_rank": 1,
+      "dense_rank": 5,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q6",
+      "query": "Người sử dụng lao động có phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động không?",
+      "ground_truth": "Điều 99.",
+      "bm25_rank": 1,
+      "dense_rank": "-",
+      "hybrid_rank": 4
+    },
+    {
+      "id": "Q7",
+      "query": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong những trường hợp nào?",
+      "ground_truth": "Điều 35.",
+      "bm25_rank": 5,
+      "dense_rank": "-",
+      "hybrid_rank": "-"
+    },
+    {
+      "id": "Q8",
+      "query": "Trường hợp nào người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động?",
+      "ground_truth": "Điều 37.",
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q9",
+      "query": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động gồm những gì?",
+      "ground_truth": "Điều 48.",
+      "bm25_rank": 4,
+      "dense_rank": 4,
+      "hybrid_rank": 2
+    },
+    {
+      "id": "Q10",
+      "query": "Những đối tượng người lao động nào thuộc diện tham gia bảo hiểm xã hội bắt buộc?",
+      "ground_truth": "Điều 2.",
+      "bm25_rank": 2,
+      "dense_rank": "-",
+      "hybrid_rank": 5
+    },
+    {
+      "id": "Q11",
+      "query": "Điều kiện hưởng chế độ thai sản khi sinh con đối với lao động nữ là gì?",
+      "ground_truth": "Điều 50.",
+      "bm25_rank": 2,
+      "dense_rank": "-",
+      "hybrid_rank": 3
+    },
+    {
+      "id": "Q12",
+      "query": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là bao nhiêu tháng?",
+      "ground_truth": "Điều 53.",
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q13",
+      "query": "Điều kiện hưởng chế độ ốm đau đối với người lao động tham gia bảo hiểm xã hội bắt buộc là gì?",
+      "ground_truth": "Điều 42.",
+      "bm25_rank": "-",
+      "dense_rank": "-",
+      "hybrid_rank": "-"
+    },
+    {
+      "id": "Q14",
+      "query": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+      "ground_truth": "Điều 45.",
+      "bm25_rank": 1,
+      "dense_rank": "-",
+      "hybrid_rank": 2
+    },
+    {
+      "id": "Q15",
+      "query": "Điều kiện hưởng lương hưu và tuổi nghỉ hưu của người lao động được quy định như thế nào?",
+      "ground_truth": "Điều 169., Điều 64.",
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "id": "Q16",
+      "query": "Nghỉ đẻ thì công ty có phải trả lương hay bảo hiểm xã hội chi trả?",
+      "ground_truth": "Điều 168., Điều 53., Điều 93.",
+      "bm25_rank": 3,
+      "dense_rank": 5,
+      "hybrid_rank": 1
+    }
+  ]
+}

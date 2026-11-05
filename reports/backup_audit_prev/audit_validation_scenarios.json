@@ -1,0 +1,101 @@
+[
+  {
+    "scenario_id": "scenario_1_exact_match",
+    "name": "Số liệu đúng trong Khoản được trích dẫn (75% ở Khoản 1)",
+    "validation_status": "PASSED",
+    "is_valid": true,
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45 | Khoản 1 (Trang 35)",
+      "Xác thực mức/tỷ lệ '75%' xuất hiện chính xác trong KHOẢN TRÍCH DẪN CĂN CỨ",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 90.5% từ khóa cốt lõi"
+    ],
+    "warning_messages": [],
+    "error_messages": [],
+    "hallucinated_citations": [],
+    "unsupported_facts": []
+  },
+  {
+    "scenario_id": "scenario_2_number_in_sibling_clause",
+    "name": "Số liệu chỉ xuất hiện ở Khoản khác (Khoản 2 có 65%, nhưng trích dẫn Khoản 1)",
+    "validation_status": "WARNING",
+    "is_valid": true,
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45 | Khoản 1 (Trang 35)",
+      "Xác minh tỷ lệ '65%' có trong cùng Điều luật tham chiếu",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 73.3% từ khóa cốt lõi"
+    ],
+    "warning_messages": [
+      "Tỷ lệ '65%' có trong Điều luật liên quan nhưng nằm ở Khoản khác, chưa định vị chính xác Khoản trích dẫn"
+    ],
+    "error_messages": [],
+    "hallucinated_citations": [],
+    "unsupported_facts": []
+  },
+  {
+    "scenario_id": "scenario_3_wrong_clause",
+    "name": "Trích dẫn đúng Điều nhưng sai Khoản (Khoản 99 không tồn tại)",
+    "validation_status": "FAILED",
+    "is_valid": false,
+    "passed_checks": [],
+    "warning_messages": [],
+    "error_messages": [
+      "Mã chunk_id không tồn tại trong hệ thống: '41_2024_QH15_art_45_cl_99_999'"
+    ],
+    "hallucinated_citations": [
+      "Invalid chunk_id: 41_2024_QH15_art_45_cl_99_999"
+    ],
+    "unsupported_facts": []
+  },
+  {
+    "scenario_id": "scenario_4_hallucinated_facts",
+    "name": "Câu trả lời có thông tin/con số không được hỗ trợ bởi văn bản (100% lương)",
+    "validation_status": "FAILED",
+    "is_valid": false,
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45 | Khoản 1 (Trang 35)",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 50.0% từ khóa cốt lõi"
+    ],
+    "warning_messages": [],
+    "error_messages": [
+      "Tỷ lệ '100%' xuất hiện trong câu trả lời nhưng HOÀN TOÀN KHÔNG có trong bất kỳ văn bản nguồn nào!"
+    ],
+    "hallucinated_citations": [],
+    "unsupported_facts": [
+      "100%"
+    ]
+  },
+  {
+    "scenario_id": "scenario_5_citation_inconsistency",
+    "name": "Kết luận không phù hợp với căn cứ pháp lý (Trích Điều 45 ốm đau nhưng kết luận thai sản)",
+    "validation_status": "WARNING",
+    "is_valid": true,
+    "passed_checks": [
+      "Xác thực hợp lệ: Luật Bảo hiểm xã hội 2024 | Điều 45 | Khoản 1 (Trang 35)",
+      "Xác minh thời hạn '6 tháng' có trong Điều luật tham chiếu",
+      "Độ nhất quán Căn cứ - Kết luận (Citation-Answer Consistency): Đạt 50.0% từ khóa cốt lõi"
+    ],
+    "warning_messages": [
+      "Thời hạn '6 tháng' nằm trong cùng Điều nhưng cần kiểm tra lại chính xác Khoản quy định"
+    ],
+    "error_messages": [],
+    "hallucinated_citations": [],
+    "unsupported_facts": []
+  },
+  {
+    "scenario_id": "scenario_6_missing_law",
+    "name": "Trường hợp thiếu văn bản pháp luật trong Knowledge Base (Luật Hàng không)",
+    "validation_status": "FAILED",
+    "is_valid": false,
+    "passed_checks": [],
+    "warning_messages": [
+      "Cảnh báo phạm vi dữ liệu: Câu hỏi chứa thuật ngữ 'chậm, thường, chuyến' không có trong cơ sở dữ liệu luật lao động/BHXH hiện hành."
+    ],
+    "error_messages": [
+      "Số hiệu văn bản không hợp lệ hoặc ngoài phạm vi: '66/2006/QH11'"
+    ],
+    "hallucinated_citations": [
+      "Invalid doc: 66/2006/QH11"
+    ],
+    "unsupported_facts": []
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "test_id": "TC01",
+    "category": "Lao động - Thử việc",
+    "question": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 10,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là 60 ngày.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 25. Thời gian thử việc | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 25. Thời gian thử việc | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 25. Thời gian thử việc | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 25. Thời gian thử việc | Khoản 4"
+    ],
+    "timings": {
+      "rewriting_time": 0.0014231204986572266,
+      "intent_time": 0.0019383430480957031,
+      "retrieval_time": 0.18976831436157227,
+      "analysis_time": 18.853595972061157,
+      "validation_time": 0.0012202262878417969,
+      "response_time": 0.0005667209625244141,
+      "total_time": 19.051192045211792
+    },
+    "resources": {
+      "process_ram_before_mb": 1917.3,
+      "process_ram_after_mb": 2360.6,
+      "process_ram_delta_mb": 443.3,
+      "system_ram_used_gb": 13.71,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.1
+    }
+  },
+  {
+    "test_id": "TC02",
+    "category": "Lao động - Nghỉ phép",
+    "question": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 8,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường là 12 ngày làm việc.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 6",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 4",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 5",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 113. Nghỉ hằng năm | Khoản 7"
+    ],
+    "timings": {
+      "rewriting_time": 0.0005981922149658203,
+      "intent_time": 0.0005385875701904297,
+      "retrieval_time": 0.054015159606933594,
+      "analysis_time": 21.974132776260376,
+      "validation_time": 0.0017309188842773438,
+      "response_time": 0.0,
+      "total_time": 22.032408475875854
+    },
+    "resources": {
+      "process_ram_before_mb": 2360.6,
+      "process_ram_after_mb": 2369.2,
+      "process_ram_delta_mb": 8.6,
+      "system_ram_used_gb": 13.7,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.1
+    }
+  },
+  {
+    "test_id": "TC03",
+    "category": "Lao động - Thời giờ làm việc",
+    "question": "Thời giờ làm việc bình thường không quá bao nhiêu giờ trong một ngày và một tuần?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 5,
+    "analysis_status": "success",
+    "validation_status": "WARNING",
+    "conclusion": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 105. Thời giờ làm việc bình thường | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 146. Thời giờ làm việc của người chưa thành niên | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 105. Thời giờ làm việc bình thường | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 146. Thời giờ làm việc của người chưa thành niên | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 105. Thời giờ làm việc bình thường | Khoản 3"
+    ],
+    "timings": {
+      "rewriting_time": 0.0012214183807373047,
+      "intent_time": 0.0005419254302978516,
+      "retrieval_time": 0.04187893867492676,
+      "analysis_time": 21.789234399795532,
+      "validation_time": 0.0016994476318359375,
+      "response_time": 0.0,
+      "total_time": 21.83457612991333
+    },
+    "resources": {
+      "process_ram_before_mb": 2369.2,
+      "process_ram_after_mb": 2371.2,
+      "process_ram_delta_mb": 1.9,
+      "system_ram_used_gb": 13.8,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.7
+    }
+  },
+  {
+    "test_id": "TC04",
+    "category": "Lao động - Tiền lương làm thêm",
+    "question": "Làm thêm giờ vào ngày nghỉ hàng tuần được trả lương tính như thế nào?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 10,
+    "analysis_status": "success",
+    "validation_status": "WARNING",
+    "conclusion": "Người lao động được trả lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc đang làm như sau:",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 111. Nghỉ hằng tuần | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 111. Nghỉ hằng tuần | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 111. Nghỉ hằng tuần | Khoản 1"
+    ],
+    "timings": {
+      "rewriting_time": 0.0005543231964111328,
+      "intent_time": 0.0005533695220947266,
+      "retrieval_time": 0.03499197959899902,
+      "analysis_time": 27.533761978149414,
+      "validation_time": 0.0017588138580322266,
+      "response_time": 0.0005972385406494141,
+      "total_time": 27.574052810668945
+    },
+    "resources": {
+      "process_ram_before_mb": 2371.2,
+      "process_ram_after_mb": 2373.6,
+      "process_ram_delta_mb": 2.4,
+      "system_ram_used_gb": 13.71,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.1
+    }
+  },
+  {
+    "test_id": "TC05",
+    "category": "Lao động - Tiền lương ngừng việc",
+    "question": "Người sử dụng lao động có phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động không?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 9,
+    "analysis_status": "success",
+    "validation_status": "WARNING",
+    "conclusion": "Người sử dụng lao động không phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 99. Tiền lương ngừng việc | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 99. Tiền lương ngừng việc | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 99. Tiền lương ngừng việc | Khoản 3"
+    ],
+    "timings": {
+      "rewriting_time": 0.0,
+      "intent_time": 0.0005786418914794922,
+      "retrieval_time": 0.06619000434875488,
+      "analysis_time": 20.73333215713501,
+      "validation_time": 0.002216815948486328,
+      "response_time": 0.0,
+      "total_time": 20.803455352783203
+    },
+    "resources": {
+      "process_ram_before_mb": 2373.6,
+      "process_ram_after_mb": 2376.5,
+      "process_ram_delta_mb": 3.0,
+      "system_ram_used_gb": 13.72,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.2
+    }
+  },
+  {
+    "test_id": "TC06",
+    "category": "Lao động - Đơn phương chấm dứt HĐLĐ",
+    "question": "Trường hợp nào người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 15,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động khi người lao động ốm đau hoặc bị tai nạn, bệnh nghề nghiệp đang điều trị, điều dưỡng theo chỉ định của cơ sở khám bệnh, chữa bệnh có thẩm quyền, trừ trường hợp quy định tại điểm b khoản 1 Điều 36 của Bộ luật này.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 37. Trường hợp người sử dụng lao động không được thực hiện | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 10",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 13",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 37. Trường hợp người sử dụng lao động không được thực hiện | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 37. Trường hợp người sử dụng lao động không được thực hiện | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 4",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 34. Các trường hợp chấm dứt hợp đồng lao động | Khoản 5"
+    ],
+    "timings": {
+      "rewriting_time": 0.0,
+      "intent_time": 0.00057220458984375,
+      "retrieval_time": 0.04794454574584961,
+      "analysis_time": 23.018798828125,
+      "validation_time": 0.003920793533325195,
+      "response_time": 0.0,
+      "total_time": 23.074758529663086
+    },
+    "resources": {
+      "process_ram_before_mb": 2376.5,
+      "process_ram_after_mb": 2378.4,
+      "process_ram_delta_mb": 1.9,
+      "system_ram_used_gb": 13.72,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.2
+    }
+  },
+  {
+    "test_id": "TC07",
+    "category": "Lao động - Trách nhiệm chấm dứt HĐLĐ",
+    "question": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động gồm những gì?",
+    "intent_domain": "labor_law",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 15,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động bao gồm việc bồi thường cho người lao động nửa tháng tiền lương theo hợp đồng lao động và một khoản tiền tương ứng với tiền lương theo hợp đồng lao động trong những ngày không báo trước, đồng thời phải trả trợ cấp thôi việc cho người lao động khi không muốn tiếp tục làm việc.",
+    "legal_basis": [
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 48. Trách nhiệm khi chấm dứt hợp đồng lao động | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 21. Nội dung hợp đồng lao động | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 48. Trách nhiệm khi chấm dứt hợp đồng lao động | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 48. Trách nhiệm khi chấm dứt hợp đồng lao động | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm | Khoản 3",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 21. Nội dung hợp đồng lao động | Khoản 1",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 21. Nội dung hợp đồng lao động | Khoản 2",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 21. Nội dung hợp đồng lao động | Khoản 4",
+      "Bộ luật Lao động (Số 18/VBHN-VPQH) (Xác thực VBHN: 2026-02-12; Luật gốc 45/2019/QH14 hiệu lực từ 2021-01-01) | Điều 21. Nội dung hợp đồng lao động | Khoản 5"
+    ],
+    "timings": {
+      "rewriting_time": 0.0,
+      "intent_time": 0.0005526542663574219,
+      "retrieval_time": 0.04755902290344238,
+      "analysis_time": 23.08630633354187,
+      "validation_time": 0.004114866256713867,
+      "response_time": 0.0,
+      "total_time": 23.14097285270691
+    },
+    "resources": {
+      "process_ram_before_mb": 2378.4,
+      "process_ram_after_mb": 2380.3,
+      "process_ram_delta_mb": 1.9,
+      "system_ram_used_gb": 13.73,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.3
+    }
+  },
+  {
+    "test_id": "TC08",
+    "category": "BHXH - Chế độ ốm đau (Q14 Benchmark)",
+    "question": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+    "intent_domain": "social_insurance",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 10,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Mức hưởng chế độ ốm đau được tính bằng 100% tiền lương đóng bảo hiểm xã hội.",
+    "legal_basis": [
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 4",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 2",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 5",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 1",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 3",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 45. Trợ cấp ốm đau | Khoản 6"
+    ],
+    "timings": {
+      "rewriting_time": 0.0005640983581542969,
+      "intent_time": 0.0005879402160644531,
+      "retrieval_time": 0.0539393424987793,
+      "analysis_time": 21.271271467208862,
+      "validation_time": 0.0023953914642333984,
+      "response_time": 0.0,
+      "total_time": 21.328758239746094
+    },
+    "resources": {
+      "process_ram_before_mb": 2380.3,
+      "process_ram_after_mb": 2382.7,
+      "process_ram_delta_mb": 2.4,
+      "system_ram_used_gb": 13.74,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.3
+    }
+  },
+  {
+    "test_id": "TC09",
+    "category": "BHXH - Chế độ thai sản",
+    "question": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là bao nhiêu tháng?",
+    "intent_domain": "social_insurance",
+    "is_in_scope": true,
+    "retrieval_chunks_count": 15,
+    "analysis_status": "success",
+    "validation_status": "PASSED",
+    "conclusion": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là 6 tháng.",
+    "legal_basis": [
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 9",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 7",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 1",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 2",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 3",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 4",
+      "Luật Bảo hiểm xã hội (Số 41/2024/QH15) (Ban hành: 2024-06-29, Hiệu lực từ: 2025-07-01) | Điều 53. Thời gian nghỉ việc hưởng chế độ thai sản khi sinh con | Khoản 5"
+    ],
+    "timings": {
+      "rewriting_time": 0.0005939006805419922,
+      "intent_time": 0.0,
+      "retrieval_time": 0.035600900650024414,
+      "analysis_time": 29.729921102523804,
+      "validation_time": 0.003225564956665039,
+      "response_time": 0.0,
+      "total_time": 29.771350622177124
+    },
+    "resources": {
+      "process_ram_before_mb": 2382.7,
+      "process_ram_after_mb": 2384.7,
+      "process_ram_delta_mb": 2.0,
+      "system_ram_used_gb": 13.72,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.2
+    }
+  },
+  {
+    "test_id": "TC10",
+    "category": "Ngoài phạm vi (Out of Scope)",
+    "question": "Mức phạt vượt đèn đỏ đối với xe máy theo luật giao thông là bao nhiêu tiền?",
+    "intent_domain": "out_of_scope",
+    "is_in_scope": false,
+    "retrieval_chunks_count": 0,
+    "analysis_status": "N/A",
+    "validation_status": "N/A (OOS)",
+    "conclusion": "Câu hỏi nằm ngoài phạm vi tư vấn của hệ thống.",
+    "legal_basis": [],
+    "timings": {
+      "rewriting_time": 0.0,
+      "intent_time": 0.0,
+      "retrieval_time": 0.0,
+      "analysis_time": 0.0,
+      "validation_time": 0.0,
+      "response_time": 0.0,
+      "total_time": 0.0011777877807617188
+    },
+    "resources": {
+      "process_ram_before_mb": 2384.7,
+      "process_ram_after_mb": 2384.7,
+      "process_ram_delta_mb": 0.0,
+      "system_ram_used_gb": 13.72,
+      "system_ram_total_gb": 15.73,
+      "system_ram_percent": 87.2
+    }
+  }
+]

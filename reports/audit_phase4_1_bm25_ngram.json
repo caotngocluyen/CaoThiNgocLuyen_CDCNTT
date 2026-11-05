@@ -1,0 +1,236 @@
+{
+  "summary": {
+    "v1": {
+      "article": {
+        "Hit@1": 43.75,
+        "Hit@3": 75.0,
+        "Hit@5": 87.5,
+        "MRR@5": 0.601
+      },
+      "clause": {
+        "Hit@1": 25.0,
+        "Hit@3": 62.5,
+        "Hit@5": 68.75,
+        "MRR@5": 0.4219
+      },
+      "avg_latency_ms": 21.51
+    },
+    "v2": {
+      "article": {
+        "Hit@1": 56.25,
+        "Hit@3": 81.25,
+        "Hit@5": 87.5,
+        "MRR@5": 0.6688
+      },
+      "clause": {
+        "Hit@1": 31.25,
+        "Hit@3": 62.5,
+        "Hit@5": 75.0,
+        "MRR@5": 0.4656
+      },
+      "avg_latency_ms": 40.61
+    },
+    "deltas": {
+      "article_hit1": 12.5,
+      "article_hit5": 0.0,
+      "article_mrr5": 0.0678,
+      "clause_hit1": 6.25,
+      "clause_hit5": 6.25,
+      "clause_mrr5": 0.0437
+    }
+  },
+  "details": [
+    {
+      "id": "Q1",
+      "query": "Hợp đồng lao động có những loại nào?",
+      "target": "Điều 20 ['Khoản 1']",
+      "v1_art_rank": 3,
+      "v2_art_rank": 3,
+      "v1_cl_rank": 3,
+      "v2_cl_rank": 3,
+      "cl_status": "GIỮ NGUYÊN (3)",
+      "lat_v1_ms": 10.81,
+      "lat_v2_ms": 14.94
+    },
+    {
+      "id": "Q2",
+      "query": "Thời gian thử việc tối đa đối với công việc có trình độ cao đẳng trở lên là bao lâu?",
+      "target": "Điều 25 ['Khoản 2']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 1,
+      "v2_cl_rank": 1,
+      "cl_status": "GIỮ NGUYÊN (1)",
+      "lat_v1_ms": 18.87,
+      "lat_v2_ms": 34.83
+    },
+    {
+      "id": "Q3",
+      "query": "Người lao động được nghỉ phép hàng năm bao nhiêu ngày trong điều kiện bình thường?",
+      "target": "Điều 113 ['Khoản 1']",
+      "v1_art_rank": 2,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 2,
+      "v2_cl_rank": 1,
+      "cl_status": "CẢI THIỆN (2 -> 1)",
+      "lat_v1_ms": 22.9,
+      "lat_v2_ms": 33.14
+    },
+    {
+      "id": "Q4",
+      "query": "Thời giờ làm việc bình thường không quá bao nhiêu giờ trong một ngày và một tuần?",
+      "target": "Điều 105 ['Khoản 1']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 1,
+      "v2_cl_rank": 1,
+      "cl_status": "GIỮ NGUYÊN (1)",
+      "lat_v1_ms": 18.13,
+      "lat_v2_ms": 28.11
+    },
+    {
+      "id": "Q5",
+      "query": "Làm thêm giờ vào ngày nghỉ hàng tuần được trả lương tính như thế nào?",
+      "target": "Điều 98 ['Khoản 1']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 1,
+      "v2_cl_rank": 2,
+      "cl_status": "GIẢM (1 -> 2)",
+      "lat_v1_ms": 16.51,
+      "lat_v2_ms": 26.14
+    },
+    {
+      "id": "Q6",
+      "query": "Người sử dụng lao động có phải trả lương khi người lao động phải ngừng việc do lỗi của người sử dụng lao động không?",
+      "target": "Điều 99 ['Khoản 1']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 2,
+      "v2_cl_rank": 3,
+      "cl_status": "GIẢM (2 -> 3)",
+      "lat_v1_ms": 24.26,
+      "lat_v2_ms": 46.25
+    },
+    {
+      "id": "Q7",
+      "query": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong những trường hợp nào?",
+      "target": "Điều 35 ['Khoản 2']",
+      "v1_art_rank": 5,
+      "v2_art_rank": 3,
+      "v1_cl_rank": 12,
+      "v2_cl_rank": 7,
+      "cl_status": "CẢI THIỆN (12 -> 7)",
+      "lat_v1_ms": 25.89,
+      "lat_v2_ms": 62.89
+    },
+    {
+      "id": "Q8",
+      "query": "Trường hợp nào người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động?",
+      "target": "Điều 37 ['Khoản 1', 'Khoản 2']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 1,
+      "v2_cl_rank": 1,
+      "cl_status": "GIỮ NGUYÊN (1)",
+      "lat_v1_ms": 29.26,
+      "lat_v2_ms": 50.8
+    },
+    {
+      "id": "Q9",
+      "query": "Trách nhiệm của người sử dụng lao động khi chấm dứt hợp đồng lao động gồm những gì?",
+      "target": "Điều 48 ['Khoản 1', 'Khoản 3']",
+      "v1_art_rank": 4,
+      "v2_art_rank": 5,
+      "v1_cl_rank": 4,
+      "v2_cl_rank": 5,
+      "cl_status": "GIẢM (4 -> 5)",
+      "lat_v1_ms": 21.27,
+      "lat_v2_ms": 39.37
+    },
+    {
+      "id": "Q10",
+      "query": "Những đối tượng người lao động nào thuộc diện tham gia bảo hiểm xã hội bắt buộc?",
+      "target": "Điều 2 ['Khoản 1']",
+      "v1_art_rank": 2,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 3,
+      "v2_cl_rank": 1,
+      "cl_status": "CẢI THIỆN (3 -> 1)",
+      "lat_v1_ms": 19.47,
+      "lat_v2_ms": 39.18
+    },
+    {
+      "id": "Q11",
+      "query": "Điều kiện hưởng chế độ thai sản khi sinh con đối với lao động nữ là gì?",
+      "target": "Điều 50 ['Khoản 1', 'Khoản 2']",
+      "v1_art_rank": 2,
+      "v2_art_rank": 2,
+      "v1_cl_rank": 2,
+      "v2_cl_rank": 2,
+      "cl_status": "GIỮ NGUYÊN (2)",
+      "lat_v1_ms": 22.45,
+      "lat_v2_ms": 44.17
+    },
+    {
+      "id": "Q12",
+      "query": "Thời gian nghỉ việc hưởng chế độ thai sản khi sinh một con là bao nhiêu tháng?",
+      "target": "Điều 53 ['Khoản 1']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 12,
+      "v2_cl_rank": 9,
+      "cl_status": "CẢI THIỆN (12 -> 9)",
+      "lat_v1_ms": 20.19,
+      "lat_v2_ms": 35.98
+    },
+    {
+      "id": "Q13",
+      "query": "Điều kiện hưởng chế độ ốm đau đối với người lao động tham gia bảo hiểm xã hội bắt buộc là gì?",
+      "target": "Điều 42 ['Khoản 1']",
+      "v1_art_rank": 17,
+      "v2_art_rank": 7,
+      "v1_cl_rank": 17,
+      "v2_cl_rank": 7,
+      "cl_status": "CẢI THIỆN (17 -> 7)",
+      "lat_v1_ms": 23.93,
+      "lat_v2_ms": 61.22
+    },
+    {
+      "id": "Q14",
+      "query": "Mức hưởng chế độ ốm đau được tính bằng bao nhiêu phần trăm tiền lương đóng bảo hiểm xã hội?",
+      "target": "Điều 45 ['Khoản 2']",
+      "v1_art_rank": 1,
+      "v2_art_rank": 1,
+      "v1_cl_rank": 7,
+      "v2_cl_rank": 4,
+      "cl_status": "CẢI THIỆN (7 -> 4)",
+      "lat_v1_ms": 22.65,
+      "lat_v2_ms": 50.44
+    },
+    {
+      "id": "Q15",
+      "query": "Điều kiện hưởng lương hưu và tuổi nghỉ hưu của người lao động được quy định như thế nào?",
+      "target": "Điều 64 ['Khoản 1']",
+      "v1_art_rank": "-",
+      "v2_art_rank": 19,
+      "v1_cl_rank": "-",
+      "v2_cl_rank": 19,
+      "cl_status": "CẢI THIỆN (999 -> 19)",
+      "lat_v1_ms": 28.6,
+      "lat_v2_ms": 49.98
+    },
+    {
+      "id": "Q16",
+      "query": "Nghỉ đẻ thì công ty có phải trả lương hay bảo hiểm xã hội chi trả?",
+      "target": "Điều 168 ['Khoản 2']",
+      "v1_art_rank": 3,
+      "v2_art_rank": 3,
+      "v1_cl_rank": 3,
+      "v2_cl_rank": 3,
+      "cl_status": "GIỮ NGUYÊN (3)",
+      "lat_v1_ms": 18.92,
+      "lat_v2_ms": 32.34
+    }
+  ]
+}
